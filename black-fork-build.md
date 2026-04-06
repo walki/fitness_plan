@@ -97,9 +97,21 @@ You return Apr 24, likely tired and saddle-sore. **Do not train. Absorb.**
 | Sat Apr 26 | Easy 45 min spin or walk. See how the body feels. |
 | Mon Apr 27 | Optional: 60–75 min easy outdoor ride. Z2 only. No intervals. |
 | Tue Apr 28 | Rest |
-| Wed Apr 29 | **Openers: 30 min with 3×3 min at 80–85% FTP (~175–185W). Wake the legs up. Nothing more.** |
+| Wed Apr 29 | **FTP validation + openers.** Replace the original openers session with a short FTP test protocol — see below. |
 | Thu Apr 30 | Rest or easy 20 min spin |
 | Fri May 1 | Drive to Mohican. Rest. Eat well. Sleep early. |
+
+### Wed Apr 29 — FTP Validation Protocol
+
+Current FTP is 217W (set ~Jan 2026). After Florida's aerobic volume block, it's likely shifted. Use Tuesday Apr 8's 3×10 sweet spot as a diagnostic (if 184W felt easy at low HR, FTP has moved). Then validate here:
+
+**Option A — 20-min test:** Warm up 15 min with 2×1 min at 190W, then ride 20 min as hard as sustainable. FTP = avg power × 0.95. This gives a real number for Black Fork pacing.
+
+**Option B — Ramp test:** If legs are too tired from Florida for a 20-min effort, do a standard ramp test instead. Less accurate but lower cost.
+
+**Option C — Skip it:** If the body is still wrecked from Florida, just do the original openers (3×3 min at 80–85% FTP) and pace Black Fork off RPE and HR. Don't blow up your legs 3 days before the race for a number.
+
+Decision depends on how recovery is going. Coach will call it based on how Mon Apr 27 ride feels.
 
 **The goal this week:** Stop being expedition legs. Remember you can go fast.
 
@@ -149,4 +161,4 @@ The Red Eagle race will be used as a tune-up and FTP indicator. More on that aft
 
 ---
 
-*Last updated: March 28, 2026 — coach: Claude*
+*Last updated: April 5, 2026 — coach: Claude*
