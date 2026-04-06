@@ -58,6 +58,17 @@ Roger drops CSV exports into `exports/` for processing:
 
 When processing CSVs, split out the latest week. **Weeks start on Monday.**
 
+## Zwift custom workouts
+
+Claude can generate Zwift workout files (`.zwo` XML) and save them directly to Roger's Zwift workout folder.
+
+- **Workout folder:** `C:\Users\roger\AppData\Local\Zwift\Workouts\11622\`
+- **Format:** `.zwo` XML — see existing files in that folder for reference
+- Power targets are expressed as **decimal fractions of FTP** (e.g. 0.85 = 85% FTP)
+- Use `<IntervalsT>` for repeating on/off blocks, `<SteadyState>` for single efforts, `<Warmup>`/`<Cooldown>` for ramps
+- Include `Cadence` and `CadenceResting` attributes where relevant
+- When designing a workout in a weekly log or plan file, also generate the `.zwo` file so Roger can just open Zwift and go
+
 ## Scripting
 
 - Use **Elixir** for any scripts
