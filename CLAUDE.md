@@ -62,7 +62,7 @@ When processing CSVs, split out the latest week. **Weeks start on Monday.**
 
 Claude can generate Zwift workout files (`.zwo` XML) and save them directly to Roger's Zwift workout folder.
 
-- **Workout folder:** `C:\Users\roger\AppData\Local\Zwift\Workouts\11622\`
+- **Workout folder:** `zwift-workouts/` in the repo — Roger copies to his Zwift machine as needed
 - **Format:** `.zwo` XML — see existing files in that folder for reference
 - Power targets are expressed as **decimal fractions of FTP** (e.g. 0.85 = 85% FTP)
 - Use `<IntervalsT>` for repeating on/off blocks, `<SteadyState>` for single efforts, `<Warmup>`/`<Cooldown>` for ramps

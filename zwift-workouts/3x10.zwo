@@ -1,0 +1,18 @@
+<workout_file>
+    <author>R.Walker</author>
+    <name>3x10</name>
+    <description>3 x 10  80-90 % of  ftp</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="INTERVALS"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.55506909" PowerHigh="0.73940092" pace="0"/>
+        <SteadyState Duration="60" Power="0.80852532" pace="0"/>
+        <SteadyState Duration="60" Power="0.60115206" pace="0"/>
+        <SteadyState Duration="60" Power="0.87764978" pace="0"/>
+        <SteadyState Duration="120" Power="0.60115206" pace="0"/>
+        <IntervalsT Repeat="3" OnDuration="600" OffDuration="300" OnPower="0.84999996" OffPower="0.60115206" pace="0" Cadence="90" CadenceResting="65"/>
+        <Cooldown Duration="300" PowerLow="0.64723504" PowerHigh="0.4629032" pace="0"/>
+    </workout>
+</workout_file>
