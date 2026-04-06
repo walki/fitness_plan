@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Edit(weekly-logs/*.md)"
+    ],
+    "deny": [
+      "EnterWorktree"
+    ]
+  }
+}
