@@ -47,12 +47,20 @@ Last meaningful training stimulus before Florida. Two key sessions matter — Tu
 
 | Day | Session |
 |-----|---------|
-| Mon | Off or walk |
+| Mon | Off or walk + 🧱 Core micro (5–10 min) |
 | Tue | **3×10 sweet spot (173–195W), 5 min rest between. ~45 min total.** First structured effort since Mid South. |
-| Wed | Run 40 min, HR <135 |
+| Wed | Run 40 min, HR <135 + 🧱 Core micro (5–10 min) |
 | Thu | 60–70 min Z2 trainer, smooth |
+| Fri | 🧱 Core micro (5–10 min) |
 | Sat | Strength session — goblet squats, RDLs, rows. **Keep it light — no DOMS going into Florida.** |
 | **Sun** | **Long ride 3–3.5 hrs — key session. Grail outdoors. Some rolling terrain effort, not all Z2. Simulate a loaded feel if possible. Last big training day.** |
+
+### 🧱 Core Micro Sessions (3× this week: Mon, Wed, Fri)
+5–10 min, bodyweight only. Do these any time of day — post-ride, morning, evening, whatever sticks.
+- Plank: 45–60 sec
+- Side plank: 30 sec each side
+- Dead bugs: 10–12 reps
+- Bird dogs: 10–12 reps each side
 
 **Week 2 goal:** Plant the last fitness seed. Let Florida water it.
 
@@ -81,6 +89,8 @@ Last meaningful training stimulus before Florida. Two key sessions matter — Tu
 - No power meter (Kona/Cutthroat). Use HR and feel. Aerobic cruise = 110–125 bpm. Don't push above 140 unless the terrain forces it.
 - Eat and drink before you're hungry or thirsty. Loaded bike + heat = higher fuel demand than you expect.
 - Sleep is training. Prioritize it.
+
+**🧱 Core during Florida:** Keep the micro sessions going — 2–3× during the week, whenever convenient. Morning before riding, evening at camp, whatever. It's 5 minutes and keeps the habit alive.
 
 **What Florida does for Black Fork:** 280 miles of aerobic work on a loaded bike primes your engine beautifully. You'll return tired but deeply fit. The recovery week converts that into race-day sharpness.
 
