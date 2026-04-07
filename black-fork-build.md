@@ -47,12 +47,15 @@ Last meaningful training stimulus before Florida. Two key sessions matter — Tu
 
 | Day | Session |
 |-----|---------|
-| Mon | Off or walk |
+| Mon | Off or walk + **core micro** |
 | Tue | **3×10 sweet spot (173–195W), 5 min rest between. ~45 min total.** First structured effort since Mid South. |
-| Wed | Run 40 min, HR <135 |
+| Wed | Run 40 min, HR <135 + **core micro** |
 | Thu | 60–70 min Z2 trainer, smooth |
+| Fri | **Core micro** |
 | Sat | Strength session — goblet squats, RDLs, rows. **Keep it light — no DOMS going into Florida.** |
 | **Sun** | **Long ride 3–3.5 hrs — key session. Grail outdoors. Some rolling terrain effort, not all Z2. Simulate a loaded feel if possible. Last big training day.** |
+
+**Core micro (MWF, 5–10 min):** Plank 60s, side planks 30s each, dead bugs 1×10/side (2–3s hold), bird dogs 1×10/side (2–3s hold). Done during the work day. Builds anti-rotation stability for climbing under fatigue.
 
 **Week 2 goal:** Plant the last fitness seed. Let Florida water it.
 
