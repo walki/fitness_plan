@@ -61,14 +61,21 @@ Last meaningful training stimulus before Florida. Two key sessions matter — Tu
 
 ---
 
-## 🌴 Apr 13–16: Pre-Florida Wind-Down
+## 🟠 Week 3 — Apr 13–17: Final Build Before Florida
+
+**Revised Apr 9:** Originally planned as a pre-Florida taper. But Florida is aerobic volume, not a peak race — it doesn't need a taper. More importantly, Florida won't include any structured intensity, so this is the **last chance to hit sweet spot and VO2 work before Black Fork** (race is May 2, 15 days after returning). Roger flies out Fri Apr 17 PM.
 
 | Day | Session |
 |-----|---------|
-| Mon Apr 13 | Easy 45 min spin. Check over the bike. |
-| Tue Apr 14 | 30 min easy spin or rest. |
-| Wed Apr 15 | Rest. Pack. Travel prep. |
-| Thu Apr 16 | Travel day or rest. Arrive fresh. |
+| Mon Apr 13 | Easy walk + **core micro**. Real recovery after Sunday long ride. |
+| **Tue Apr 14** | **4×10 sweet spot at 187W (86% FTP), 5 min rest. Step-up from 3×10.** Push rep 4 to 190–195W if legs feel great. |
+| Wed Apr 15 | Run 45 min, HR <135 + **core micro** |
+| **Thu Apr 16** | **5×3 min VO2 at 240–250W (110–115% FTP), 3 min recovery.** Top-end work — zero opportunity for this in Florida. |
+| Fri Apr 17 AM | Easy 30 min spin + **core micro**. Pack. Fly PM. |
+
+**Zwift workouts ready:** `4x10.zwo` and `5x3-vo2.zwo` in `zwift-workouts/`
+
+**Week 3 goal:** Last quality week before Florida aerobic block. Hit the intensity while structure is available.
 
 ---
 
