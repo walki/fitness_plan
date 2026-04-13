@@ -1,0 +1,18 @@
+<workout_file>
+    <author>R.Walker / Coach Claude</author>
+    <name>4x10 Sweet Spot</name>
+    <description>4 x 10 min at 85-90% FTP. Progression from 3x10. Target 187W (86% of 217 FTP). Push rep 4 to 190-195W if legs feel great.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="INTERVALS"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.55" PowerHigh="0.74" pace="0"/>
+        <SteadyState Duration="60" Power="0.81" pace="0"/>
+        <SteadyState Duration="60" Power="0.60" pace="0"/>
+        <SteadyState Duration="60" Power="0.88" pace="0"/>
+        <SteadyState Duration="120" Power="0.60" pace="0"/>
+        <IntervalsT Repeat="4" OnDuration="600" OffDuration="300" OnPower="0.86" OffPower="0.60" pace="0" Cadence="90" CadenceResting="75"/>
+        <Cooldown Duration="300" PowerLow="0.65" PowerHigh="0.46" pace="0"/>
+    </workout>
+</workout_file>

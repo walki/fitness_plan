@@ -47,33 +47,35 @@ Last meaningful training stimulus before Florida. Two key sessions matter — Tu
 
 | Day | Session |
 |-----|---------|
-| Mon | Off or walk + 🧱 Core micro (5–10 min) |
+| Mon | Off or walk + **core micro** |
 | Tue | **3×10 sweet spot (173–195W), 5 min rest between. ~45 min total.** First structured effort since Mid South. |
-| Wed | Run 40 min, HR <135 + 🧱 Core micro (5–10 min) |
+| Wed | Run 40 min, HR <135 + **core micro** |
 | Thu | 60–70 min Z2 trainer, smooth |
-| Fri | 🧱 Core micro (5–10 min) |
+| Fri | **Core micro** |
 | Sat | Strength session — goblet squats, RDLs, rows. **Keep it light — no DOMS going into Florida.** |
 | **Sun** | **Long ride 3–3.5 hrs — key session. Grail outdoors. Some rolling terrain effort, not all Z2. Simulate a loaded feel if possible. Last big training day.** |
 
-### 🧱 Core Micro Sessions (3× this week: Mon, Wed, Fri)
-5–10 min, bodyweight only. Do these any time of day — post-ride, morning, evening, whatever sticks.
-- Plank: 45–60 sec
-- Side plank: 30 sec each side
-- Dead bugs: 10–12 reps
-- Bird dogs: 10–12 reps each side
+**Core micro (MWF, 5–10 min):** Plank 60s, side planks 30s each, dead bugs 1×10/side (2–3s hold), bird dogs 1×10/side (2–3s hold). Done during the work day. Builds anti-rotation stability for climbing under fatigue.
 
 **Week 2 goal:** Plant the last fitness seed. Let Florida water it.
 
 ---
 
-## 🌴 Apr 13–16: Pre-Florida Wind-Down
+## 🟠 Week 3 — Apr 13–17: Final Build Before Florida
+
+**Revised Apr 9:** Originally planned as a pre-Florida taper. But Florida is aerobic volume, not a peak race — it doesn't need a taper. More importantly, Florida won't include any structured intensity, so this is the **last chance to hit sweet spot and VO2 work before Black Fork** (race is May 2, 15 days after returning). Roger flies out Fri Apr 17 PM.
 
 | Day | Session |
 |-----|---------|
-| Mon Apr 13 | Easy 45 min spin. Check over the bike. |
-| Tue Apr 14 | 30 min easy spin or rest. |
-| Wed Apr 15 | Rest. Pack. Travel prep. |
-| Thu Apr 16 | Travel day or rest. Arrive fresh. |
+| Mon Apr 13 | Easy walk + **core micro**. Real recovery after Sunday long ride. |
+| **Tue Apr 14** | **4×10 sweet spot at 187W (86% FTP), 5 min rest. Step-up from 3×10.** Push rep 4 to 190–195W if legs feel great. |
+| Wed Apr 15 | Run 45 min, HR <135 + **core micro** |
+| **Thu Apr 16** | **5×3 min VO2 at 240–250W (110–115% FTP), 3 min recovery.** Top-end work — zero opportunity for this in Florida. |
+| Fri Apr 17 AM | Easy 30 min spin + **core micro**. Pack. Fly PM. |
+
+**Zwift workouts ready:** `4x10.zwo` and `5x3-vo2.zwo` in `zwift-workouts/`
+
+**Week 3 goal:** Last quality week before Florida aerobic block. Hit the intensity while structure is available.
 
 ---
 
@@ -107,9 +109,21 @@ You return Apr 24, likely tired and saddle-sore. **Do not train. Absorb.**
 | Sat Apr 26 | Easy 45 min spin or walk. See how the body feels. |
 | Mon Apr 27 | Optional: 60–75 min easy outdoor ride. Z2 only. No intervals. |
 | Tue Apr 28 | Rest |
-| Wed Apr 29 | **Openers: 30 min with 3×3 min at 80–85% FTP (~175–185W). Wake the legs up. Nothing more.** |
+| Wed Apr 29 | **FTP validation + openers.** Replace the original openers session with a short FTP test protocol — see below. |
 | Thu Apr 30 | Rest or easy 20 min spin |
 | Fri May 1 | Drive to Mohican. Rest. Eat well. Sleep early. |
+
+### Wed Apr 29 — FTP Validation Protocol
+
+Current FTP is 217W (set ~Jan 2026). After Florida's aerobic volume block, it's likely shifted. Use Tuesday Apr 8's 3×10 sweet spot as a diagnostic (if 184W felt easy at low HR, FTP has moved). Then validate here:
+
+**Option A — 20-min test:** Warm up 15 min with 2×1 min at 190W, then ride 20 min as hard as sustainable. FTP = avg power × 0.95. This gives a real number for Black Fork pacing.
+
+**Option B — Ramp test:** If legs are too tired from Florida for a 20-min effort, do a standard ramp test instead. Less accurate but lower cost.
+
+**Option C — Skip it:** If the body is still wrecked from Florida, just do the original openers (3×3 min at 80–85% FTP) and pace Black Fork off RPE and HR. Don't blow up your legs 3 days before the race for a number.
+
+Decision depends on how recovery is going. Coach will call it based on how Mon Apr 27 ride feels.
 
 **The goal this week:** Stop being expedition legs. Remember you can go fast.
 
@@ -159,4 +173,4 @@ The Red Eagle race will be used as a tune-up and FTP indicator. More on that aft
 
 ---
 
-*Last updated: March 28, 2026 — coach: Claude*
+*Last updated: April 12, 2026 — coach: Claude*

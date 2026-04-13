@@ -1,0 +1,18 @@
+<workout_file>
+    <author>R.Walker / Coach Claude</author>
+    <name>5x3 VO2 Max</name>
+    <description>5 x 3 min at 110-115% FTP (240-250W). 3 min recovery. Top-end work before Florida. Cadence 95-100 on intervals.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="INTERVALS"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.55" PowerHigh="0.75" pace="0"/>
+        <SteadyState Duration="120" Power="0.82" pace="0"/>
+        <SteadyState Duration="60" Power="0.55" pace="0"/>
+        <SteadyState Duration="60" Power="1.00" pace="0"/>
+        <SteadyState Duration="120" Power="0.55" pace="0"/>
+        <IntervalsT Repeat="5" OnDuration="180" OffDuration="180" OnPower="1.12" OffPower="0.55" pace="0" Cadence="98" CadenceResting="80"/>
+        <Cooldown Duration="300" PowerLow="0.65" PowerHigh="0.45" pace="0"/>
+    </workout>
+</workout_file>
