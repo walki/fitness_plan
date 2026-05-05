@@ -7,14 +7,56 @@
         <tag name="FTP"/>
     </tags>
     <workout>
-        <Warmup Duration="600" PowerLow="0.55" PowerHigh="0.74" pace="0" Cadence="85"/>
-        <SteadyState Duration="180" Power="0.83" pace="0" Cadence="90"/>
-        <SteadyState Duration="120" Power="0.60" pace="0" Cadence="80"/>
-        <SteadyState Duration="60" Power="1.01" pace="0" Cadence="95"/>
-        <SteadyState Duration="120" Power="0.60" pace="0" Cadence="80"/>
-        <SteadyState Duration="60" Power="1.15" pace="0" Cadence="95"/>
-        <SteadyState Duration="180" Power="0.55" pace="0" Cadence="80"/>
-        <FreeRide Duration="1200" FlatRoad="1"/>
-        <Cooldown Duration="300" PowerLow="0.65" PowerHigh="0.45" pace="0" Cadence="75"/>
+        <Warmup Duration="600" PowerLow="0.55" PowerHigh="0.74" pace="0" Cadence="85">
+            <textevent timeoffset="0" message="Easy spin. Get the legs loose."/>
+            <textevent timeoffset="300" message="Halfway through warmup. Stay relaxed."/>
+        </Warmup>
+        <SteadyState Duration="180" Power="0.83" pace="0" Cadence="90">
+            <textevent timeoffset="0" message="3 min at 180W. Wake the legs up."/>
+            <textevent timeoffset="120" message="How do they feel? Just getting the blood moving."/>
+        </SteadyState>
+        <SteadyState Duration="120" Power="0.60" pace="0" Cadence="80">
+            <textevent timeoffset="0" message="Easy. Recover."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="1.01" pace="0" Cadence="95">
+            <textevent timeoffset="0" message="1 min at 220W. Feel what old FTP zone is like."/>
+            <textevent timeoffset="30" message="Cadence up. This should feel brisk, not hard."/>
+        </SteadyState>
+        <SteadyState Duration="120" Power="0.60" pace="0" Cadence="80">
+            <textevent timeoffset="0" message="Easy. One more opener."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="1.15" pace="0" Cadence="95">
+            <textevent timeoffset="0" message="250W for 1 min. Open the lungs."/>
+            <textevent timeoffset="30" message="This is harder than your test pace. Let it burn."/>
+        </SteadyState>
+        <SteadyState Duration="180" Power="0.55" pace="0" Cadence="80">
+            <textevent timeoffset="0" message="3 min easy. Settle. Breathe. Focus."/>
+            <textevent timeoffset="60" message="The test is 20 min. Not a sprint."/>
+            <textevent timeoffset="120" message="Start at 230W. Adjust by feel. Don't blow up."/>
+            <textevent timeoffset="150" message="Here we go."/>
+        </SteadyState>
+        <FreeRide Duration="1200" FlatRoad="1">
+            <textevent timeoffset="0" message="GO. Settle into 230W. Find a rhythm."/>
+            <textevent timeoffset="60" message="Cadence 85-95. Smooth pedal stroke."/>
+            <textevent timeoffset="180" message="3 min done. This should feel hard but manageable."/>
+            <textevent timeoffset="300" message="Quarter done. Check HR. Hold if manageable."/>
+            <textevent timeoffset="360" message="If 230 feels easy, nudge to 235-240W."/>
+            <textevent timeoffset="480" message="8 min in. If desperate, back to 225W. Finish > number."/>
+            <textevent timeoffset="600" message="HALFWAY. You know exactly what this feels like now."/>
+            <textevent timeoffset="660" message="This is the hard part. Min 11-15 is the dark place."/>
+            <textevent timeoffset="720" message="Hold. Adjust up or down - your call."/>
+            <textevent timeoffset="840" message="6 min left. You've done 3x10 sweet spot. This is 6 min."/>
+            <textevent timeoffset="900" message="5 min left. Still holding? Good. Don't quit now."/>
+            <textevent timeoffset="960" message="4 min. You can do anything for 4 minutes."/>
+            <textevent timeoffset="1020" message="3 min. This is the last climb at Black Fork."/>
+            <textevent timeoffset="1080" message="2 MIN LEFT. Dig a little. Find more."/>
+            <textevent timeoffset="1140" message="60 SECONDS. Everything you've got."/>
+            <textevent timeoffset="1170" message="30 seconds. FINISH STRONG."/>
+            <textevent timeoffset="1195" message="DONE. Let it go. Breathe."/>
+        </FreeRide>
+        <Cooldown Duration="300" PowerLow="0.65" PowerHigh="0.45" pace="0" Cadence="75">
+            <textevent timeoffset="0" message="Easy spin. Well done. Check your 20-min avg power."/>
+            <textevent timeoffset="30" message="FTP = that number x 0.95. You have a real number now."/>
+        </Cooldown>
     </workout>
 </workout_file>
