@@ -56,7 +56,7 @@
 | ~~May 2, 2026~~ | ~~Black Fork Gravel Grinder~~ | ~~53.8 mi~~ | ~~5,059 ft~~ | ~~B race~~ ✅ Done — 5:01, NP 178W, finished strong |
 | **May 17, 2026** | **Red Eagle Gravel Grinder** | **42.6 mi** | **1,479 ft** | **B+ race / FTP indicator** |
 | ~~Apr 17–24, 2026~~ | ~~Florida Huracan 300~~ | ~~~280 mi~~ | ~~minimal~~ | ✅ Done — 282 mi in 6 days |
-| TBD | Funk Bottoms Gravel (FBG) | **100k** | TBD | A race — scaled from 200k to 100k. Sane choice. Maybe 200k next year. |
+| TBD | Funk Bottoms Gravel (FBG) | **66.7 mi (100k)** | **6,186 ft** | A race — 15 climbs, 76% unpaved. Scaled from 200k. Similar climb density to Black Fork. |
 
 ---
 
