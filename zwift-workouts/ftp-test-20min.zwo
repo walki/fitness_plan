@@ -1,0 +1,20 @@
+<workout_file>
+    <author>R.Walker / Coach Claude</author>
+    <name>20-Min FTP Test</name>
+    <description>Structured warmup with openers, then 20-min free ride FTP test. FTP = avg power x 0.95. Start around 230W, adjust by feel. Don't blow up early.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="FTP"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.55" PowerHigh="0.74" pace="0" Cadence="85"/>
+        <SteadyState Duration="180" Power="0.83" pace="0" Cadence="90"/>
+        <SteadyState Duration="120" Power="0.60" pace="0" Cadence="80"/>
+        <SteadyState Duration="60" Power="1.01" pace="0" Cadence="95"/>
+        <SteadyState Duration="120" Power="0.60" pace="0" Cadence="80"/>
+        <SteadyState Duration="60" Power="1.15" pace="0" Cadence="95"/>
+        <SteadyState Duration="180" Power="0.55" pace="0" Cadence="80"/>
+        <FreeRide Duration="1200" FlatRoad="1"/>
+        <Cooldown Duration="300" PowerLow="0.65" PowerHigh="0.45" pace="0" Cadence="75"/>
+    </workout>
+</workout_file>

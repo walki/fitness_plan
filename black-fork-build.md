@@ -88,11 +88,30 @@ Last meaningful training stimulus before Florida. Two key sessions matter — Tu
 **Coaching notes for Florida:**
 - Ride the pace of the group. You're the strongest rider — that means you set the tone by being calm, not by riding away.
 - Day 1 legs ≠ Day 7 legs. Treat every day like you have three more after it.
-- No power meter (Kona/Cutthroat). Use HR and feel. Aerobic cruise = 110–125 bpm. Don't push above 140 unless the terrain forces it.
+- No power meter (Salsa Cutthroat). Use HR and feel when wearing the strap. Aerobic cruise = 110–125 bpm. Don't push above 140 unless the terrain forces it.
 - Eat and drink before you're hungry or thirsty. Loaded bike + heat = higher fuel demand than you expect.
 - Sleep is training. Prioritize it.
 
 **🧱 Core during Florida:** Keep the micro sessions going — 2–3× during the week, whenever convenient. Morning before riding, evening at camp, whatever. It's 5 minutes and keeps the habit alive.
+
+**📱 Florida check-in plan — screenshot tracking:**
+Roger will be on his phone during the trip. Lightweight daily check-ins via screenshots:
+
+- **Garmin ride summary screenshot** after each day's ride — distance, time, elevation, HR if wearing the strap (HR may not be every day, that's fine)
+- **MyFitnessPal daily summary screenshot** — calories + protein. Rough logging is fine. Camp food estimates > no data.
+- Drop screenshots into a Claude conversation whenever convenient — end of day, next morning, whatever works
+- Claude reads the images and keeps a running tally so the post-trip weekly log isn't a guessing game
+
+**What we're watching for (not stressing about):**
+- Daily distance/time to track cumulative load
+- HR when available — just making sure it's not redlining every day
+- Calories staying up — underfueling on a loaded bike in FL heat is the real risk
+- Protein awareness (it'll slip, that's expected — just don't forget it exists)
+
+**What we're NOT doing:**
+- No macro targets. Eat.
+- No pace targets. Ride the group.
+- No structured sessions. Zero.
 
 **What Florida does for Black Fork:** 280 miles of aerobic work on a loaded bike primes your engine beautifully. You'll return tired but deeply fit. The recovery week converts that into race-day sharpness.
 
