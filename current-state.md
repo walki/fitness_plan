@@ -64,7 +64,7 @@
 
 | Metric | Value | Date | Notes |
 |--------|-------|------|-------|
-| FTP | 217W (stale) | ~Jan 2026 | Multiple data points suggest 235–250W. Needs formal test. |
+| FTP | **220W (working estimate)** | May 8, 2026 | 20-min test gave 186W but was compromised (pacing, free ride unfamiliarity). Working estimate of 220W based on accumulated sweet spot, long ride, and race data. Over-unders needed to develop threshold capacity. |
 | FTP evidence | 186W NP @ HR 129 for 3 hrs | Apr 12 | Zero drift. Not sweet spot — aerobic pace. |
 | FTP evidence | 178W NP @ HR 134 for 5 hrs | May 2 | Black Fork race. IF 0.822 at stale FTP. |
 | VO2 ceiling | 4/5 reps at 243W, rep 5 dropped to 210W | Apr 16 | Top-end is the weakness. Address in FBG build. |
