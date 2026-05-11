@@ -12,8 +12,9 @@
 - **Location:** Ohio
 - **Age:** 56
 - **Starting weight:** 194 lbs
-- **Current weight:** 189.8 lbs *(as of May 4, 2026)*
-- **Weight goal:** ~175 lbs by Jan 2027 (~0.5 lb/week sustainable loss)
+- **Current weight:** 188.5 lbs avg *(as of May 10, 2026)*
+- **Weight goal:** **165 lbs** (~0.5–0.75 lb/week, trending downward is the key)
+- **Health:** On blood pressure meds. Doc says "okay" but weight loss is part of the plan.
 
 ---
 
@@ -21,9 +22,9 @@
 
 | Goal | Baseline | Target | Timeline |
 |------|----------|--------|----------|
-| Weight | 194 lbs | 175 lbs | Jan 2027 |
-| Cycling FTP | 217W (stale — likely 235–250W) | 240–250W | Dec 2026 |
-| Run pace (HR <135) | ~12:30/mi → 12:11/mi (Apr 8) | Sub-10:00/mi | Dec 2026 |
+| Weight | 194 lbs (start) / 188.5 (current) | **165 lbs** | Ongoing |
+| Cycling FTP | 220W (working estimate) | 240–250W | Dec 2026 |
+| Run pace (HR <135) | 13:15 (Apr 1) → **11:54/mi (May 9)** | Sub-10:00/mi | Dec 2026 |
 | Half marathon | — | Sub-2:00 | Late 2026 |
 
 ---
@@ -68,7 +69,7 @@
 | FTP evidence | 186W NP @ HR 129 for 3 hrs | Apr 12 | Zero drift. Not sweet spot — aerobic pace. |
 | FTP evidence | 178W NP @ HR 134 for 5 hrs | May 2 | Black Fork race. IF 0.822 at stale FTP. |
 | VO2 ceiling | 4/5 reps at 243W, rep 5 dropped to 210W | Apr 16 | Top-end is the weakness. Address in FBG build. |
-| Aerobic run pace (HR <135) | 12:11/mi | Apr 8, 2026 | Up from 13:15 (Apr 1). Improving. |
+| Aerobic run pace (HR <135) | **11:54/mi** | May 9, 2026 | PR. Up from 13:15 (Apr 1). Sub-12 territory. |
 | Black Fork race | 52.4 mi, 6,365 ft, NP 178W, 5:01 | May 2, 2026 | Finished strong. Night and day vs Mo Gritty. |
 | Florida volume | 282 mi in 6 days | Apr 18–24 | HR avg 95–109. Aerobic block completed. |
 | Resting HR | ~80 | May 1 | Pre-race evening at Mohican |
@@ -108,8 +109,8 @@
 
 ## 🏥 Active Issues
 
-- **Lower back niggle:** Predates Florida. Getting better. Core micro work is important. May need specific lower back mobility work added.
-- **Mo Gritty crash (Apr 4):** Elbow and hip — fully healed.
+- **Lower back niggle:** Predates Florida. Getting better. Core micro work is important. Check in weekly.
+- **Blood pressure:** On medication. Doc wants weight loss. Track BP 2×/week with Garmin Index BPM.
 
 ---
 
@@ -121,18 +122,18 @@
 - Plans adapt to life — brewery rides happen, that's fine
 - Weekly Sunday check-in is the anchor
 - Frequent mid-week updates welcome — RPE now > RPE 4 days ago
-- Ride by HR, not power — FTP is stale and power numbers are misleading
+- Ride by HR first, power second — HR has been the most reliable guide
 
 ---
 
 ## 📝 How to Start a New Chat
 
-1. Check out the active `week-*` branch
+1. Make sure you're on `main` and pull latest
 2. Read `current-state.md` — this file
 3. Read the most recent file in `weekly-logs/`
-4. Read the active plan file
+4. Read the active plan file (listed above under Active Plan)
 5. Then respond to whatever Roger brings
 
 ---
 
-*Last updated: May 4, 2026*
+*Last updated: May 10, 2026*

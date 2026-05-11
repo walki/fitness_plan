@@ -42,20 +42,22 @@ This gets you up to speed fast so Roger can jump straight into updates without r
 - `weekly-base-template.md` — Template for weekly plans
 - `reporting-templates.md` — Templates for tracking/reporting
 - `weekly-logs/` — Weekly log entries
-- `build-to-fbg.md`, `black-fork-build.md` — Training builds/programs
-- `scripts/` — Elixir scripts for parsing data exports
-- `exports/` — Raw CSV exports (VeloViewer, MyFitnessPal)
+- `build-to-fbg.md`, `black-fork-build.md` — Training builds/programs (black-fork completed, build-to-fbg needs rewrite)
+- `weekly-plans/` — Printable weekly plan PDFs (generated with `scripts/generate_weekly_pdf.py`)
+- `zwift-workouts/` — Zwift .zwo workout files
+- `scripts/` — Python and Elixir scripts for data processing and PDF generation
+- `exports/` — Raw CSV exports (historical — now Roger pastes data directly from Garmin/MFP)
 
-## Data sources and imports
+## Data sources and workflow
 
-Roger drops CSV exports into `exports/` for processing:
+Roger pastes data directly in the conversation — no CSV exports needed:
 
-- **VeloViewer activities CSV** (`activities-*.csv`) — exported from veloviewer.com, contains all Strava activities
-  - IMPORTANT: despite column headers showing imperial labels (mi, ft, mph), all values are **raw SI units** (metres, seconds, m/s). Must convert for display.
-- **MyFitnessPal Nutrition Summary** (`Nutrition-Summary-*.csv`) — per-meal breakdown with calories, macros (fat, carbs, protein), micros, and notes
-- **MyFitnessPal Measurement Summary** (`Measurement-Summary-*.csv`) — daily weigh-ins (Date, Weight in lbs)
+- **Garmin Connect** — ride/run data (copy-paste from activity detail), daily calorie burn, sleep score, HRV, resting HR
+- **Garmin Index BPM** — blood pressure readings (2×/week target)
+- **MyFitnessPal** — daily food diary (copy-paste), daily weigh-ins
+- **Historical CSV exports** in `exports/` — VeloViewer activities + MFP data from early in the project. Kept for reference but no longer the active workflow.
 
-When processing CSVs, split out the latest week. **Weeks start on Monday.**
+When Roger shares data, log it in the current weekly log and cross-reference against the active plan.
 
 ## Zwift custom workouts
 
@@ -66,11 +68,23 @@ Claude can generate Zwift workout files (`.zwo` XML) and save them directly to R
 - Power targets are expressed as **decimal fractions of FTP** (e.g. 0.85 = 85% FTP)
 - Use `<IntervalsT>` for repeating on/off blocks, `<SteadyState>` for single efforts, `<Warmup>`/`<Cooldown>` for ramps
 - Include `Cadence` and `CadenceResting` attributes where relevant
+- Use `<textevent>` tags inside blocks for coaching cues during workouts (pacing reminders, motivation, countdown)
+- Use `<FreeRide Duration="X" FlatRoad="1">` for self-paced efforts (e.g., FTP tests) — include text events for coaching
 - When designing a workout in a weekly log or plan file, also generate the `.zwo` file so Roger can just open Zwift and go
+
+## Weekly printable PDF
+
+Generate a one-page printable weekly plan PDF each Sunday when setting up the week:
+- Save to `weekly-plans/YYYY-MM-DD-description.pdf`
+- Use `scripts/generate_weekly_pdf.py` as the base (reportlab)
+- New/unfamiliar workouts: spell out in detail
+- Familiar workouts: summary only
+- Include nutrition targets, core micro, race day plan if applicable
 
 ## Scripting
 
-- Use **Elixir** for any scripts
+- Use **Python** for PDF generation and data processing
+- Use **Elixir** for any other scripts as needed
 - Persist scripts to `scripts/` so they're reusable and consistent across sessions
 - Roger works from Windows (personal) and macOS (work) — scripts should be cross-platform
 
