@@ -179,7 +179,7 @@ def build_pdf(output_path):
             ),
             Paragraph(
                 "<b>Sun long ride fueling test:</b><br/>"
-                "Target 90+ g carbs/hr (Red Eagle: 117 g/hr, no GI issues)<br/>"
+                "Target 90+ g carbs/hr (Red Eagle: ~106 g/hr, no GI issues)<br/>"
                 "Practice: 2 SiS gels/hr + 1 scoop Tailwind/bottle<br/>"
                 "This is the dress rehearsal for FBG. Take it seriously.",
                 small_style,
