@@ -85,13 +85,15 @@
 - Core micro sessions MWF (5–10 min)
 
 **Typical week:**
-- Mon: Off or walk + core micro
+- Mon: Walk + core micro + **upper push + arms strength (~20 min)**
 - Tue: Trainer session (intervals or Z2) — morning before work
 - Wed: Run + core micro
 - Thu: Z2 ride or trainer session (co-working day)
-- Fri: Rest or light + core micro
-- Sat: Strength or easy run
+- Fri: Light + core micro + **upper pull + arms strength (~20 min)**
+- Sat: **Full body strength, lower-focused (~35 min)** + optional easy spin
 - Sun: **Long ride (anchor session)** — most important day of the week
+
+**Strength frequency:** 3 short sessions/week (Mon push / Fri pull / Sat full-body). Restored May 17, 2026 after weeks of drift — arms specifically need the frequency.
 
 ---
 
@@ -136,4 +138,4 @@
 
 ---
 
-*Last updated: May 10, 2026*
+*Last updated: May 17, 2026*
