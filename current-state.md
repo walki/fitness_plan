@@ -113,6 +113,8 @@
 
 - **Lower back niggle:** Predates Florida. Getting better. Core micro work is important. Check in weekly.
 - **Blood pressure:** On medication. Doc wants weight loss. Track BP 2×/week with Garmin Index BPM.
+- **Left knee — post-ACL (2007):** Big ACL/MCL/meniscus surgery + 6+ mo rehab. Persistent quad/VMO weakness, ~19 years out. Exposed by split squats and leg extensions (10 lb left vs 30 lb right). Strength training only ~3 mo old — connective tissue still adapting. Rehab integrated into strength program (see active weekly log: TKEs, Spanish squats, box step-ups, slow eccentrics). 6-8 week build expected before symmetry narrows. PT consult if no progress by week 6.
+- **Left elbow — Jan 2026 overuse:** Not fully recovered, 5 months out (chronic tendinopathy territory). Compounded by right-hand dominance. Rehab integrated: isometric wrist holds, chest-supported rows, slow eccentric hammer curls biased left. Rule: pain <4/10 during loading OK; spikes higher or lingers >24h = back off.
 
 ---
 
