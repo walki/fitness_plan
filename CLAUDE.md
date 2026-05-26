@@ -46,6 +46,7 @@ This gets you up to speed fast so Roger can jump straight into updates without r
 - `archive/` — Completed/historical plans (e.g. `black-fork-build.md`)
 - `weekly-plans/` — Printable weekly plan PDFs (generated with `scripts/generate_weekly_pdf.py`)
 - `zwift-workouts/` — Zwift .zwo workout files
+- `garmin-workouts/` — Garmin structured workout specs (markdown for manual build in Garmin Connect web; FIT/TCX files may be added later)
 - `scripts/` — Python and Elixir scripts for data processing and PDF generation
 - `exports/` — Raw CSV exports (historical — now Roger pastes data directly from Garmin/MFP)
 
