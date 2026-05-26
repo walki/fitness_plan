@@ -42,7 +42,8 @@ This gets you up to speed fast so Roger can jump straight into updates without r
 - `weekly-base-template.md` — Template for weekly plans
 - `reporting-templates.md` — Templates for tracking/reporting
 - `weekly-logs/` — Weekly log entries
-- `build-to-fbg.md`, `black-fork-build.md` — Training builds/programs (black-fork completed, build-to-fbg needs rewrite)
+- `build-to-fbg.md` — Active training plan (Red Eagle → FBG 100k, race Jun 13, 2026)
+- `archive/` — Completed/historical plans (e.g. `black-fork-build.md`)
 - `weekly-plans/` — Printable weekly plan PDFs (generated with `scripts/generate_weekly_pdf.py`)
 - `zwift-workouts/` — Zwift .zwo workout files
 - `scripts/` — Python and Elixir scripts for data processing and PDF generation

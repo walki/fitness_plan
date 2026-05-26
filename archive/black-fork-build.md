@@ -1,5 +1,8 @@
 # 🏁 Black Fork Build Plan — May 2, 2026
 
+> **📦 ARCHIVED May 26, 2026.** Black Fork race completed May 2, 2026 — 52.4 mi, 6,365 ft, NP 178W, 5:01, finished strong. Florida Huracan 300 expedition (Apr 17–24) also covered here.
+> **Active plan now: `build-to-fbg.md`** (Red Eagle → FBG 100k, race Jun 13).
+
 ## 📍 Context
 
 - **Today:** March 28, 2026
