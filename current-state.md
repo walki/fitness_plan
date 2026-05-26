@@ -22,9 +22,10 @@
 
 | Goal | Baseline | Target | Timeline |
 |------|----------|--------|----------|
-| Weight | 194 lbs (start) / 188.5 (current) | **165 lbs** | Ongoing |
-| Cycling FTP | 220W (working estimate) | 240–250W | Dec 2026 |
+| Weight | 194 lbs (Jan 2026 start) / **189.3 (7-day avg)** | **165 lbs** | Ongoing |
+| Cycling FTP | 220W → **230W (May 17)** | 240–250W | Dec 2026 |
 | Run pace (HR <135) | 13:15 (Apr 1) → **11:54/mi (May 9)** | Sub-10:00/mi | Dec 2026 |
+| Run tempo pace (HR 145-155) | 10:00/mi @ HR 147 (May 22) | continued progression | Late 2026 |
 | Half marathon | — | Sub-2:00 | Late 2026 |
 
 ---
@@ -43,21 +44,27 @@
 **Nutrition tracking:** MyFitnessPal (most days, rough estimates)  
 **Data platforms:** Garmin, Strava, Veloviewer
 
+**Strength equipment (home, May 2026):**
+- Dumbbells: 10, 15, 20, 25 lb pairs (existing) + **30 and 40 lb pairs ordered/arriving** (upgrade May 26)
+- Bench (acquired May 23)
+- Resistance bands: long loop + mini-bands/hip circles (ordered May 23)
+- Aerobic step / box for step-ups (existing, 10-12")
+
 ---
 
 ## 📅 Active Plan
 
-**Current phase:** Phase 2 — Red Eagle → FBG Build  
-**Active plan file:** `black-fork-build.md` *(needs new plan file for Red Eagle → FBG)*
+**Current phase:** FBG Build week 2 of 4 (peak week May 25–31)
+**Active plan file:** `build-to-fbg.md` (rewritten May 26 — Red Eagle → FBG 100k)
 
 ### Upcoming Events
 
 | Date | Event | Distance | Climbing | Classification |
 |------|-------|----------|----------|----------------|
-| ~~May 2, 2026~~ | ~~Black Fork Gravel Grinder~~ | ~~53.8 mi~~ | ~~5,059 ft~~ | ~~B race~~ ✅ Done — 5:01, NP 178W, finished strong |
-| **May 17, 2026** | **Red Eagle Gravel Grinder** | **42.6 mi** | **1,479 ft** | **B+ race / FTP indicator** |
 | ~~Apr 17–24, 2026~~ | ~~Florida Huracan 300~~ | ~~~280 mi~~ | ~~minimal~~ | ✅ Done — 282 mi in 6 days |
-| **Jun 13, 2026** | **Funk Bottoms Gravel (FBG)** | **66.7 mi (100k)** | **6,186 ft** | **A race** — 15 climbs, 76% unpaved. Similar climb density to Black Fork. |
+| ~~May 2, 2026~~ | ~~Black Fork Gravel Grinder~~ | ~~53.8 mi~~ | ~~5,059 ft~~ | ~~B race~~ ✅ Done — 5:01, NP 178W, finished strong |
+| ~~May 17, 2026~~ | ~~Red Eagle Gravel Grinder~~ | ~~42.6 mi~~ | ~~1,479 ft~~ | ~~B+ race~~ ✅ Done — **2:40, NP 199W, IF 0.91 off 219W FTP, sub-3:00 hit** |
+| **Jun 13, 2026** | **Funk Bottoms Gravel (FBG)** | **66.7 mi (100k)** | **6,186 ft** | **A race** — 15 climbs, 76% unpaved. ~94 ft/mi climb density. |
 
 ---
 
@@ -65,14 +72,19 @@
 
 | Metric | Value | Date | Notes |
 |--------|-------|------|-------|
-| FTP | **220W (working estimate)** | May 8, 2026 | 20-min test gave 186W but was compromised (pacing, free ride unfamiliarity). Working estimate of 220W based on accumulated sweet spot, long ride, and race data. Over-unders needed to develop threshold capacity. |
-| FTP evidence | 186W NP @ HR 129 for 3 hrs | Apr 12 | Zero drift. Not sweet spot — aerobic pace. |
-| FTP evidence | 178W NP @ HR 134 for 5 hrs | May 2 | Black Fork race. IF 0.822 at stale FTP. |
-| VO2 ceiling | 4/5 reps at 243W, rep 5 dropped to 210W | Apr 16 | Top-end is the weakness. Address in FBG build. |
-| Aerobic run pace (HR <135) | **11:54/mi** | May 9, 2026 | PR. Up from 13:15 (Apr 1). Sub-12 territory. |
-| Black Fork race | 52.4 mi, 6,365 ft, NP 178W, 5:01 | May 2, 2026 | Finished strong. Night and day vs Mo Gritty. |
-| Florida volume | 282 mi in 6 days | Apr 18–24 | HR avg 95–109. Aerobic block completed. |
-| Resting HR | ~80 | May 1 | Pre-race evening at Mohican |
+| FTP | **230W (working estimate)** | May 17, 2026 | Bumped from 220W after Red Eagle: NP 199W @ HR 142 for 2:40 (IF 0.91 off 219W) with reported "felt good." Race data > formal test. Confirmed by Wed 5/20 over-under (max HR 164 at over targets) and Mon 5/25 long Z2 (IF 0.726, only 15 bpm cardiac drift over 4+ hrs). |
+| Cycling Z2 power / HR | 129–172W / HR 120–134 | May 24, 2026 | Working zones off 230W FTP and ~150 LTHR estimate. Validated by Mon 5/25 ride. |
+| Cycling LTHR | ~150 bpm | inferred May 17 | From Red Eagle: HR avg 142 for 2:40 at IF 0.91. Real test needed for confirmation. |
+| Aerobic run pace (HR <135) | **11:54/mi** | May 9, 2026 | Up from 13:15 (Apr 1). |
+| Run tempo pace | **10:00/mi @ HR 147** | May 22, 2026 | Threshold benefit. Progression continues. |
+| Max on-bike HR (recent) | 164 bpm | May 20, 2026 | Wed 3×6 over-under, last over. Suggests true max ~170. |
+| Resting HR | 51 bpm | May 20, 2026 | BP reading AM — endurance athlete territory. |
+| BP (on meds) | **117/79** | May 20, 2026 | Normal range. |
+| Red Eagle race | 44 mi, 1,772 ft, NP 199W, 2:40 | May 17, 2026 | Sub-3:00 hit. IF 0.91 off 219W. Aerobic 5.0 Overreaching. |
+| Black Fork race | 52.4 mi, 6,365 ft, NP 178W, 5:01 | May 2, 2026 | Finished strong. |
+| Long Z2 ride (validation) | 62 mi, 4:24, IF 0.726, ~15 bpm drift | May 25, 2026 | Aerobic durability for FBG confirmed. |
+| Florida volume | 282 mi in 6 days | Apr 18–24, 2026 | Aerobic block. |
+| Fueling capacity ceiling | **~106 g carbs/hr, no GI distress** | May 17, 2026 (Red Eagle) | Validated tolerance. FBG target: 80–90 g/hr (durability over peak). |
 
 ---
 
@@ -101,18 +113,21 @@
 
 - Tracking: MyFitnessPal, most days
 - Target calories: tiered by day type (rest ~2,100–2,200, training ~2,400–2,500, big ride ~2,700+)
-- Protein target: 150g/day
-- **Whey protein powder** is the key lever — one scoop closes the protein gap. Habit broke during Florida, needs restart.
+- Protein target: 150g/day — **habit rock solid, hitting target 6 of 7 days** (May 18–24 week). Whey scoop daily is the lever.
+- **Dietary sodium target: under 2,500 mg/day.** Currently averaging ~3,000 mg/day (May 18–24). Recurring culprits: Italian dressing, full Chipotle bowls, marinara meatballs. BP-relevant chronic load.
+- **Exercise sodium reported separately** — gets used in sweat, not BP-relevant. Roger has ultra-running background and understands sodium loss; don't conflate the two.
 - Pre-race fueling protocol: 2,500+ cal / 300g+ carbs day before. Validated and working.
-- On-bike fueling: targeting 60–70g carbs/hr. Currently averaging 42–58g/hr — needs improvement for FBG.
-- No aggressive dieting during race weeks
+- On-bike fueling capacity: **validated at ~106 g carbs/hr** (Red Eagle, 82°F heat, no GI distress). FBG target: 80–90 g/hr for 5-hr durability.
+- Go-to products: **SiS gels + Tailwind** (Roger's proven choices; don't propose substitutes).
+- No aggressive dieting during race weeks.
+- Recent weight trend: 7-day avg 189.3 (May 24), down 0.86 from prior week. Calorie balance calibrated within noise.
 
 ---
 
 ## 🏥 Active Issues
 
-- **Lower back niggle:** Predates Florida. Getting better. Core micro work is important. Check in weekly.
-- **Blood pressure:** On medication. Doc wants weight loss. Track BP 2×/week with Garmin Index BPM.
+- **Lower back niggle:** Predates Florida. **Possibly resolved as of May 26** 🤞 — last week reported "mostly good, only when driving"; this week may be gone. Continue core micro as cheap insurance. Flag if it returns.
+- **Blood pressure:** On medication. Most recent reading 117/79 ✅ (May 20). Track 2×/week with Garmin Index BPM — currently slipping to 1/week, needs attention.
 - **Left knee — post-ACL (2007):** Big ACL/MCL/meniscus surgery + 6+ mo rehab. Persistent quad/VMO weakness, ~19 years out. Exposed by split squats and leg extensions (10 lb left vs 30 lb right). Strength training only ~3 mo old — connective tissue still adapting. Rehab integrated into strength program (see active weekly log: TKEs, Spanish squats, box step-ups, slow eccentrics). 6-8 week build expected before symmetry narrows. PT consult if no progress by week 6.
 - **Left elbow — Jan 2026 overuse:** Not fully recovered, 5 months out (chronic tendinopathy territory). Compounded by right-hand dominance. Rehab integrated: isometric wrist holds, chest-supported rows, slow eccentric hammer curls biased left. Rule: pain <4/10 during loading OK; spikes higher or lingers >24h = back off.
 
@@ -140,4 +155,4 @@
 
 ---
 
-*Last updated: May 17, 2026*
+*Last updated: May 26, 2026*
