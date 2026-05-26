@@ -12,7 +12,7 @@
 - **Location:** Ohio
 - **Age:** 56
 - **Starting weight:** 194 lbs
-- **Current weight:** 188.5 lbs avg *(as of May 10, 2026)*
+- **Current weight:** 189.3 lbs avg *(as of May 24, 2026, 7-day avg, −0.86 vs prior week)*
 - **Weight goal:** **165 lbs** (~0.5–0.75 lb/week, trending downward is the key)
 - **Health:** On blood pressure meds. Doc says "okay" but weight loss is part of the plan.
 
