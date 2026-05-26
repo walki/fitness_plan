@@ -1,0 +1,59 @@
+<workout_file>
+    <author>R.Walker / Coach Claude</author>
+    <name>4x6 Over-Under (Peak Week)</name>
+    <description>Peak version of the over-under. 4 x 6 min blocks, each alternating 1 min @ 105% FTP (over) / 1 min @ 95% FTP (under), repeated 3 times per block. 5 min easy spin between blocks. Step-up from last week's 3x6 — added 4th block adds accumulated fatigue. Goal: complete all 4. If block 4 forces a dropped over (holding 232W instead of 241W), that's still a win — the data is the limit. FTP 230W → over = 241W, under = 218W. ~60 min total, 24 min over-under work. Cadence 88-95 on overs, 85-90 on unders.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="INTERVALS"/>
+        <tag name="THRESHOLD"/>
+    </tags>
+    <workout>
+        <Warmup Duration="720" PowerLow="0.50" PowerHigh="0.75" pace="0"/>
+        <SteadyState Duration="60" Power="0.90" pace="0">
+            <textevent timeoffset="0" message="60s priming effort at 90% — wake the legs"/>
+        </SteadyState>
+        <SteadyState Duration="120" Power="0.55" pace="0">
+            <textevent timeoffset="0" message="Easy spin. Block 1 of 4 coming up."/>
+            <textevent timeoffset="60" message="60 seconds to block 1. 4 blocks today — pace yourself."/>
+        </SteadyState>
+
+        <IntervalsT Repeat="3" OnDuration="60" OffDuration="60" OnPower="1.05" OffPower="0.95" pace="0" Cadence="90" CadenceResting="88">
+            <textevent timeoffset="0" message="BLOCK 1 — OVER. 1 min at 105%. Smooth start to a long session."/>
+            <textevent timeoffset="60" message="UNDER. 1 min at 95%. This IS the recovery — stay strong."/>
+        </IntervalsT>
+
+        <SteadyState Duration="300" Power="0.55" pace="0">
+            <textevent timeoffset="0" message="5 min easy spin. Block 1 done. 3 to go."/>
+            <textevent timeoffset="240" message="60 seconds to block 2 — settling into the rhythm."/>
+        </SteadyState>
+
+        <IntervalsT Repeat="3" OnDuration="60" OffDuration="60" OnPower="1.05" OffPower="0.95" pace="0" Cadence="90" CadenceResting="88">
+            <textevent timeoffset="0" message="BLOCK 2 — OVER. Same intensity. You did this last week."/>
+            <textevent timeoffset="60" message="UNDER. Breathe through it."/>
+        </IntervalsT>
+
+        <SteadyState Duration="300" Power="0.55" pace="0">
+            <textevent timeoffset="0" message="5 min easy. Halfway through the work — 2 blocks remaining."/>
+            <textevent timeoffset="240" message="60 seconds to block 3 — the territory beyond last week."/>
+        </SteadyState>
+
+        <IntervalsT Repeat="3" OnDuration="60" OffDuration="60" OnPower="1.05" OffPower="0.95" pace="0" Cadence="90" CadenceResting="88">
+            <textevent timeoffset="0" message="BLOCK 3 — OVER. Past last week's volume. New ground."/>
+            <textevent timeoffset="60" message="UNDER. The recovery feels different now. Hold form."/>
+        </IntervalsT>
+
+        <SteadyState Duration="300" Power="0.55" pace="0">
+            <textevent timeoffset="0" message="5 min easy. One block left. This is the one that defines the session."/>
+            <textevent timeoffset="240" message="Last block. 60 seconds. Permission granted to drop the over to 232W if you need it — finishing matters more than perfect."/>
+        </SteadyState>
+
+        <IntervalsT Repeat="3" OnDuration="60" OffDuration="60" OnPower="1.05" OffPower="0.95" pace="0" Cadence="90" CadenceResting="88">
+            <textevent timeoffset="0" message="BLOCK 4 — OVER. Last 6 minutes of work. Empty the tank."/>
+            <textevent timeoffset="60" message="UNDER. Final unders of the day. Hold what you can."/>
+        </IntervalsT>
+
+        <Cooldown Duration="480" PowerLow="0.65" PowerHigh="0.45" pace="0">
+            <textevent timeoffset="0" message="Done. Spin easy. We debrief on whether block 4 needed the dropped over."/>
+        </Cooldown>
+    </workout>
+</workout_file>
