@@ -76,12 +76,24 @@ Claude can generate Zwift workout files (`.zwo` XML) and save them directly to R
 
 ## Weekly printable PDF
 
-Generate a one-page printable weekly plan PDF each Sunday when setting up the week:
+Generate a **single-page**, **B&W laser printer friendly** PDF each Sunday when setting up the week:
 - Save to `weekly-plans/YYYY-MM-DD-description.pdf`
-- Use `scripts/generate_weekly_pdf.py` as the base (reportlab)
-- New/unfamiliar workouts: spell out in detail
-- Familiar workouts: summary only
-- Include nutrition targets, core micro, race day plan if applicable
+- Reference script: `scripts/generate_2026-05-31_pdf.py` (current canonical template — copy and modify for each new week)
+- Reportlab (Python stdlib + reportlab dep)
+
+**Formatting rules (Roger's preferences as of May 26, 2026):**
+- **Single page** — non-negotiable. If content overflows, trim padding/font before paginating.
+- **B&W friendly palette only** — dark slate header (renders dark gray), light gray alternating rows, very light gray boxes, medium gray borders. **No color accents, no yellow highlights.** Roger prints on B&W laser.
+- **No workout step tables in the PDF.** Workouts live in their own files (`zwift-workouts/*.zwo` for trainer sessions, `garmin-workouts/*.md` for Garmin-built workouts). The PDF gives a **description paragraph** for each quality session with a pointer to the workout file.
+- **Include in every weekly PDF:**
+  - Header + 1-line subtitle (race context, where in the build)
+  - Daily schedule (compact table, highlight quality days in bold)
+  - Brief description paragraph for each quality session (over-under, tempo, long ride, etc.) — point to the .zwo / Garmin spec file
+  - Strength prescriptions (current week's lifts, side-by-side columns when 2 sessions, full exercise list with sets/reps/weight)
+  - Rehab daily options (TKEs, isometric wrist hold — current as of May 23, 2026)
+  - Nutrition + watch list (dietary vs exercise sodium separation, Sunday fueling target if applicable)
+  - Footer line: FTP, Z2 power/HR ranges, LTHR, coach attribution
+- **Race day plan / pre-load protocol:** include only in race-week PDFs.
 
 ## Scripting
 
