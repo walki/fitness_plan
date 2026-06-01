@@ -22,7 +22,7 @@
 
 | Goal | Baseline | Target | Timeline |
 |------|----------|--------|----------|
-| Weight | 194 lbs (Jan 2026 start) / **189.3 (7-day avg)** | **165 lbs** | Ongoing |
+| Weight | 194 lbs (Jan 2026 start) / **188.9 (7-day avg May 31)** | **165 lbs** | Ongoing |
 | Cycling FTP | 220W → **230W (May 17)** | 240–250W | Dec 2026 |
 | Run pace (HR <135) | 13:15 (Apr 1) → **11:54/mi (May 9)** | Sub-10:00/mi | Dec 2026 |
 | Run tempo pace (HR 145-155) | 10:00/mi @ HR 147 (May 22) | continued progression | Late 2026 |
@@ -65,6 +65,7 @@
 | ~~May 2, 2026~~ | ~~Black Fork Gravel Grinder~~ | ~~53.8 mi~~ | ~~5,059 ft~~ | ~~B race~~ ✅ Done — 5:01, NP 178W, finished strong |
 | ~~May 17, 2026~~ | ~~Red Eagle Gravel Grinder~~ | ~~42.6 mi~~ | ~~1,479 ft~~ | ~~B+ race~~ ✅ Done — **2:40, NP 199W, IF 0.91 off 219W FTP, sub-3:00 hit** |
 | **Jun 13, 2026** | **Funk Bottoms Gravel (FBG)** | **66.7 mi (100k)** | **6,186 ft** | **A race** — 15 climbs, 76% unpaved. ~94 ft/mi climb density. |
+| **Jul 25, 2026** | **Burning River 100 — 8-person relay leg** | **10-13 mi (TBD)** | **trail, NE Ohio** | **Trail run.** Roger taking one leg of the relay. Specific leg/distance assignment pending. **Requires post-FBG trail run build-up.** |
 
 ---
 
@@ -155,4 +156,4 @@
 
 ---
 
-*Last updated: May 26, 2026*
+*Last updated: May 31, 2026*
