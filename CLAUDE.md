@@ -83,7 +83,7 @@ Generate a **single-page**, **B&W laser printer friendly** PDF each Sunday when 
 
 **Formatting rules (Roger's preferences as of May 26, 2026):**
 - **Single page** — non-negotiable. If content overflows, trim padding/font before paginating.
-- **B&W friendly palette only** — dark slate header (renders dark gray), light gray alternating rows, very light gray boxes, medium gray borders. **No color accents, no yellow highlights.** Roger prints on B&W laser.
+- **B&W friendly palette only** — **light gray header background (~#dddddd) with bold black text** (the old dark-slate-with-white-text headers print muddy on B&W laser and are hard to read), light gray alternating rows, very light gray boxes, medium gray borders. **No color accents, no yellow highlights.** Roger prints on B&W laser.
 - **No workout step tables in the PDF.** Workouts live in their own files (`zwift-workouts/*.zwo` for trainer sessions, `garmin-workouts/*.md` for Garmin-built workouts). The PDF gives a **description paragraph** for each quality session with a pointer to the workout file.
 - **Include in every weekly PDF:**
   - Header + 1-line subtitle (race context, where in the build)
