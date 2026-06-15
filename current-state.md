@@ -22,7 +22,7 @@
 
 | Goal | Baseline | Target | Timeline |
 |------|----------|--------|----------|
-| Weight | 194 lbs (Jan 2026 start) / **~188 (post-FBG)** | **165 lbs** | Dec 2026 (priority lever) |
+| Weight | 194 lbs (Jan 2026 start) / **~188 (post-FBG)** | **165 lbs** | **No hard deadline. Target rate 0.5–0.75 lb/week.** At that pace, end-of-2026 likely lands ~172–178; full goal extends into 2027. The pace is success; the number is the destination. |
 | Cycling FTP | 220W → **230W (May 17)** | 240–250W (250W stretch) | Dec 2026 |
 | Run pace (HR <135) | 13:15 (Apr 1) → **11:54/mi (May 9)** | Sub-10:00/mi | Dec 2026 |
 | Run tempo pace (HR 145-155) | 10:00/mi @ HR 147 (May 22) → **9:19/mi @ HR 148 (May 28)** | continued progression | Late 2026 |
@@ -135,7 +135,7 @@
 ## ⚖️ Nutrition Status
 
 - Tracking: MyFitnessPal, most days
-- **Weight loss is the active lever** (per Roger Jun 14): target rate **0.5–0.75 lb/week**, year-end 165 lb goal. Requires sustained ~300–500 cal/day deficit on training days.
+- **Weight loss is the active lever** (per Roger Jun 14): target rate **0.5–0.75 lb/week — pace is the success metric, 165 is the destination without a hard deadline.** At that rate, year-end likely lands 172-178; full goal extends into 2027. Roger explicitly chose sustainability over urgency Jun 14. Daily deficit ~250–400 cal supports this pace.
 - Target calories: tiered by day type (rest ~2,000, easy training ~2,200, run+ride day ~2,400, long run/ride day ~2,600+)
 - Protein target: **150g/day** — habit established. Whey scoop daily is the lever.
 - Fueling on-bike capacity validated **80–106 g/hr** with SiS + Tailwind, no GI. FBG actual was 83.7 g/hr.
