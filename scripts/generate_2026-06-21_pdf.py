@@ -195,17 +195,17 @@ def build_pdf(output_path):
                 "<b>Daily targets:</b><br/>"
                 "Cal: 2,000-2,300 most days / 2,400-2,600 long run/ride days<br/>"
                 "<b>Protein 150g/day</b> -- whey scoop daily is the lever<br/>"
-                "Net deficit target: ~300-500 cal/day<br/>"
-                "Trend goal: <b>0.5-0.75 lb/week down</b><br/>"
+                "Net deficit target: ~250-400 cal/day<br/>"
+                "Trend goal: <b>0.5-0.75 lb/week -- PACE is the success metric</b><br/>"
                 "Dietary sodium: tracked, not a decision input (Roger's call)",
                 small_style,
             ),
             Paragraph(
                 "<b>Weight loss context:</b><br/>"
-                "Year-end goal: <b>165 lb</b> (currently ~188).<br/>"
-                "23 lb in 28 weeks = 0.82 lb/week required -- ambitious but in reach.<br/>"
-                "Lighter body = sub-2:00 half marathon comes into range.<br/>"
-                "Lighter body = next FBG ~30 min faster.<br/>"
+                "Destination: <b>165 lb</b> (currently ~188). <b>No hard deadline.</b><br/>"
+                "At 0.5-0.75 lb/wk: end-2026 likely lands 172-178; full goal extends into 2027 -- that's fine.<br/>"
+                "Sustainable rate > urgency. Anything faster costs training quality.<br/>"
+                "Lighter body = sub-2:00 half + next FBG ~30 min faster.<br/>"
                 "<b>No race-week refeeds for a while</b> -- BR100 doesn't qualify (not an A race).",
                 small_style,
             ),
