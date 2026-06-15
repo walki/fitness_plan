@@ -22,11 +22,12 @@
 
 | Goal | Baseline | Target | Timeline |
 |------|----------|--------|----------|
-| Weight | 194 lbs (Jan 2026 start) / **188.9 (7-day avg May 31)** | **165 lbs** | Ongoing |
-| Cycling FTP | 220W → **230W (May 17)** | 240–250W | Dec 2026 |
+| Weight | 194 lbs (Jan 2026 start) / **~188 (post-FBG)** | **165 lbs** | Dec 2026 (priority lever) |
+| Cycling FTP | 220W → **230W (May 17)** | 240–250W (250W stretch) | Dec 2026 |
 | Run pace (HR <135) | 13:15 (Apr 1) → **11:54/mi (May 9)** | Sub-10:00/mi | Dec 2026 |
-| Run tempo pace (HR 145-155) | 10:00/mi @ HR 147 (May 22) | continued progression | Late 2026 |
-| Half marathon | — | Sub-2:00 | Late 2026 |
+| Run tempo pace (HR 145-155) | 10:00/mi @ HR 147 (May 22) → **9:19/mi @ HR 148 (May 28)** | continued progression | Late 2026 |
+| **Half marathon** | — | **Sub-2:00** | **Late 2026** (hardest goal — needs weight loss to be in reach) |
+| Next FBG (2027) | 2026 finish 6:23 @ 188 lbs | **Sub-6:00 @ 165 lbs** ("20+ lbs lighter, 30 min off the clock") | Jun 2027 |
 
 ---
 
@@ -54,8 +55,9 @@
 
 ## 📅 Active Plan
 
-**Current phase:** FBG Build week 2 of 4 (peak week May 25–31)
-**Active plan file:** `build-to-fbg.md` (rewritten May 26 — Red Eagle → FBG 100k)
+**Current phase:** Post-FBG transition — running primary, cycling maintenance, weight loss active. Building toward BR100 Leg 8 (Jul 25) as a forcing function for run volume, then half-marathon goal Dec 2026.
+**Active plan file:** none — planning **week-by-week** in the weekly logs (per Roger's preference Jun 14, 2026).
+**Weekly shape:** 4 runs + 2 rides (some combined days) + 3 strength touches + daily rehab. Long trail run Sun. Bikes stay unstructured (summer) — Z2 maintenance, no intervals unless wanted.
 
 ### Upcoming Events
 
@@ -64,8 +66,10 @@
 | ~~Apr 17–24, 2026~~ | ~~Florida Huracan 300~~ | ~~~280 mi~~ | ~~minimal~~ | ✅ Done — 282 mi in 6 days |
 | ~~May 2, 2026~~ | ~~Black Fork Gravel Grinder~~ | ~~53.8 mi~~ | ~~5,059 ft~~ | ~~B race~~ ✅ Done — 5:01, NP 178W, finished strong |
 | ~~May 17, 2026~~ | ~~Red Eagle Gravel Grinder~~ | ~~42.6 mi~~ | ~~1,479 ft~~ | ~~B+ race~~ ✅ Done — **2:40, NP 199W, IF 0.91 off 219W FTP, sub-3:00 hit** |
-| **Jun 13, 2026** | **Funk Bottoms Gravel (FBG)** | **66.7 mi (100k)** | **6,186 ft** | **A race** — 15 climbs, 76% unpaved. ~94 ft/mi climb density. |
-| **Jul 25, 2026** | **Burning River 100 — 8-person relay leg** | **10-13 mi (TBD)** | **trail, NE Ohio** | **Trail run.** Roger taking one leg of the relay. Specific leg/distance assignment pending. **Requires post-FBG trail run build-up.** |
+| ~~Jun 13, 2026~~ | ~~Funk Bottoms Gravel (FBG)~~ | ~~66.7 mi (100k)~~ | ~~6,186 ft~~ | ~~A race~~ ✅ Done — **6:23:25 moving, NP 174W, IF 0.756 off 230W FTP, HR 134 avg / 158 max, 7,241 ft Garmin elev. Aerobic 5.0 Overreaching. Fueling 83.7 g/hr textbook. Walked 2 steep pitches (>15%). Finished feeling good — heat + climbing limited push, not fitness. Garmin head unit failed sensors last 15 mi → Coros Dura ordered.** |
+| **Jul 25, 2026** | **Burning River 100 — Leg 8 (final/anchor leg)** | **12.3 mi (+1,144 ft elev)** | **38% paved / 59% unpaved / 3% unknown** | **Trail run (relay).** Forcing function for run volume, NOT an A race. Filling in for injured runner; goal is "finish strong, give the team the line." Front half rolling, big climb mile 7-8, back half rolling high. |
+| Late 2026 | **Half marathon** | 13.1 mi | — | **Sub-2:00 goal.** Hardest target; needs weight to come down to make pace at HR sustainable. |
+| Jun 2027 (est) | **FBG 2027** | 100k | 6,186 ft | Stretch goal: **sub-6:00 at 165 lbs** (-30 min vs 2026 + ~23 lbs lighter). |
 
 ---
 
@@ -81,6 +85,7 @@
 | Max on-bike HR (recent) | 164 bpm | May 20, 2026 | Wed 3×6 over-under, last over. Suggests true max ~170. |
 | Resting HR | 51 bpm | May 20, 2026 | BP reading AM — endurance athlete territory. |
 | BP (on meds) | **117/79** | May 20, 2026 | Normal range. |
+| **FBG race (A-race)** | **66.4 mi, 7,241 ft (Garmin), NP 174W, 6:23 moving** | **Jun 13, 2026** | **IF 0.756 off 230W. HR 134 avg / 158 max. Aerobic 5.0 Overreaching. 83.7 g/hr fueling. Walked 2 steep pitches. Finished feeling good — heat/climbing limited push, not fitness.** |
 | Red Eagle race | 44 mi, 1,772 ft, NP 199W, 2:40 | May 17, 2026 | Sub-3:00 hit. IF 0.91 off 219W. Aerobic 5.0 Overreaching. |
 | Black Fork race | 52.4 mi, 6,365 ft, NP 178W, 5:01 | May 2, 2026 | Finished strong. |
 | Long Z2 ride (validation) | 62 mi, 4:24, IF 0.726, ~15 bpm drift | May 25, 2026 | Aerobic durability for FBG confirmed. |
@@ -97,31 +102,32 @@
 - Co-working Thursdays — sometimes post-work beers
 - Core micro sessions MWF (5–10 min)
 
-**Typical week:**
-- Mon: Walk + core micro + **upper push + arms strength (~20 min)**
-- Tue: Trainer session (intervals or Z2) — morning before work
-- Wed: Run + core micro
-- Thu: Z2 ride or trainer session (co-working day)
-- Fri: Light + core micro + **upper pull + arms strength (~20 min)**
-- Sat: **Full body strength, lower-focused (~35 min)** + optional easy spin
-- Sun: **Long ride (anchor session)** — most important day of the week
+**Typical week (post-FBG, BR100 build mode — Jun 14 → Jul 25):**
+- Mon: Walk or rest + rehab (recovery day after Sun long run)
+- Tue: Easy run 3–4 mi
+- Wed: Easy Z2 ride 60–75 min + Upper Push strength (light) + rehab
+- Thu: Easy run 3–4 mi
+- Fri: Easy run 3 mi + Upper Pull strength + rehab
+- Sat: Strength full body (lower-focused) + optional easy Z2 ride
+- Sun: **Long trail run (anchor session)** — progressing 6 → 11 mi over the build
 
-**Strength frequency:** 3 short sessions/week (Mon push / Fri pull / Sat full-body). Restored May 17, 2026 after weeks of drift — arms specifically need the frequency.
+**Equation:** 4 runs + 1–2 rides + 3 strength touches + daily TKEs/wrist hold rehab. Bikes stay unstructured (Z2 maintenance — no intervals unless wanted). Some days combine modalities.
+
+**Strength frequency:** 3 short sessions/week (Wed push / Fri pull / Sat full-body). Continued from FBG build; rehab integration stays (Spanish squats, box step-ups, slow eccentric hammer curls, TKEs, isometric wrist holds).
 
 ---
 
 ## ⚖️ Nutrition Status
 
 - Tracking: MyFitnessPal, most days
-- Target calories: tiered by day type (rest ~2,100–2,200, training ~2,400–2,500, big ride ~2,700+)
-- Protein target: 150g/day — **habit rock solid, hitting target 6 of 7 days** (May 18–24 week). Whey scoop daily is the lever.
-- **Dietary sodium target: under 2,500 mg/day.** Currently averaging ~3,000 mg/day (May 18–24). Recurring culprits: Italian dressing, full Chipotle bowls, marinara meatballs. BP-relevant chronic load.
-- **Exercise sodium reported separately** — gets used in sweat, not BP-relevant. Roger has ultra-running background and understands sodium loss; don't conflate the two.
-- Pre-race fueling protocol: 2,500+ cal / 300g+ carbs day before. Validated and working.
-- On-bike fueling capacity: **validated at ~106 g carbs/hr** (Red Eagle, 82°F heat, no GI distress). FBG target: 80–90 g/hr for 5-hr durability.
-- Go-to products: **SiS gels + Tailwind** (Roger's proven choices; don't propose substitutes).
-- No aggressive dieting during race weeks.
-- Recent weight trend: 7-day avg 189.3 (May 24), down 0.86 from prior week. Calorie balance calibrated within noise.
+- **Weight loss is the active lever** (per Roger Jun 14): target rate **0.5–0.75 lb/week**, year-end 165 lb goal. Requires sustained ~300–500 cal/day deficit on training days.
+- Target calories: tiered by day type (rest ~2,000, easy training ~2,200, run+ride day ~2,400, long run/ride day ~2,600+)
+- Protein target: **150g/day** — habit established. Whey scoop daily is the lever.
+- Fueling on-bike capacity validated **80–106 g/hr** with SiS + Tailwind, no GI. FBG actual was 83.7 g/hr.
+- Go-to products: **SiS gels + Tailwind** (Roger's proven; don't propose substitutes).
+- Dietary sodium tracked but **NOT a training or BP decision input** (per Roger). Background data only.
+- Exercise sodium reported separately — gets used in sweat.
+- Recent weight trend: 7-day avg 187.9 (Jun 7), down 1.0 from prior week. Calorie math calibrated. **Post-FBG: trend resumption is the goal — no race-week refeeds for a while.**
 
 ---
 
@@ -156,4 +162,4 @@
 
 ---
 
-*Last updated: May 31, 2026*
+*Last updated: June 14, 2026 — post-FBG*

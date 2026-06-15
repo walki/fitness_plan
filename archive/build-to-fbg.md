@@ -1,5 +1,8 @@
 # 🏁 Red Eagle → Funk Bottoms Gravel (100k) Build
 
+> **📦 ARCHIVED June 14, 2026.** FBG completed Jun 13: 66.4 mi / 6:23:25 moving / NP 174W / IF 0.756 off 230W / HR 134 avg / 158 max / Aerobic 5.0 Overreaching / 83.7 g/hr fueling textbook. Walked 2 steep pitches (>15%). Finished feeling good — heat + climbing limited push, not fitness. Plan delivered.
+> **Next phase:** BR100 Leg 8 (Jul 25) build + half-marathon prep + weight loss to 165 lb goal. Planning week-by-week in weekly logs.
+
 **Race:** Funk Bottoms Gravel — **June 13, 2026** — 66.7 mi / 6,186 ft / 15 climbs / 76% unpaved
 **Classification:** A race
 **Start:** Coming off Red Eagle (May 17, sub-3:00, NP 199W, IF 0.91 off 219W)
