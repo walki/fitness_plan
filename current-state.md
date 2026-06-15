@@ -113,7 +113,22 @@
 
 **Equation:** 4 runs + 1–2 rides + 3 strength touches + daily TKEs/wrist hold rehab. Bikes stay unstructured (Z2 maintenance — no intervals unless wanted). Some days combine modalities.
 
-**Strength frequency:** 3 short sessions/week (Wed push / Fri pull / Sat full-body). Continued from FBG build; rehab integration stays (Spanish squats, box step-ups, slow eccentric hammer curls, TKEs, isometric wrist holds).
+**Strength frequency:** 3 short sessions/week (Wed push / Fri pull / Sat full-body). **Permanent fixture — NOT dropped during running-heavy weeks.** Strength supports running (quads/glutes/hamstrings for trail descents and climbs), supports cycling power, supports weight loss (muscle preservation in calorie deficit), and supports BR100 + half-marathon longevity at 56. Rehab integration stays (Spanish squats, box step-ups, slow eccentric hammer curls, TKEs, isometric wrist holds) — left knee/elbow build is on a 6-8 week arc.
+
+**Current strength loadings (as of Jun 14, 2026):**
+- DB shoulder press: 25 lb
+- DB curl: 25 lb
+- Overhead tricep extension: 25 lb
+- Lateral raise: 15 lb
+- Push-ups: 2x15 capacity
+- Goblet squat: 30 lb (40s available, ramping in)
+- DB RDL: 40 lb each
+- Box step-ups: 20 lb each side, matched (lead left)
+- DB bench press: 25-30 lb each (40s available, ramping in)
+- Chest-supported row: 25 lb each
+- Slow eccentric hammer curl: 10 lb (left bias)
+- Iso wrist hold: 10 lb left (started at 5)
+- TKEs: black band 3×15 each leg
 
 ---
 
