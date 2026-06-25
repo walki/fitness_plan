@@ -1,0 +1,9 @@
+- [Project overview](project_overview.md) — Fitness plan repo: markdown/CSV files, not a software project
+- [User background](user_background.md) — Uses Claude Chat for brainstorming, Code for edits/commits; migrating from ChatGPT
+- [Fueling products](fueling_products.md) — SiS gels + Tailwind are Roger's proven go-tos; don't propose substitutes
+- [Garmin data caveats](garmin_data_caveats.md) — Garmin temp is device-in-sun, not air temp; other interpretation notes
+- [Strength training context](strength_training_context.md) — New to lifting in 2026; left knee (post-ACL 2007) + left elbow (Jan 2026) need rehab-style work, not more reps
+- [BP framing](bp_framing.md) — On meds, doc-managed. Track readings, don't alarm. Weight loss to 165 is the lever; decision gate is "still 132 at 165 lbs"
+- [Life context over metrics](life_context_over_metrics.md) — Don't moralize single-day food/drink choices. Funerals, family meals, social events = NOT coachable moments. Trends matter, single days don't.
+- [Auto-regulation](auto_regulation.md) — Roger picks weights by feel + form. Prescribe movement + reps + intent; let him set load. Drop weight when form breaks. Same principle extends to HR ceilings, pacing decisions.
+- [Logging tools](logging_tools.md) — MFP printable diary URL preferred for food; Hevy app for strength; Garmin Connect for cardio; Coros Dura replacing Garmin head unit for cycling.
