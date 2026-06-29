@@ -55,9 +55,9 @@
 
 ## 📅 Active Plan
 
-**Current phase:** Post-FBG transition — running primary, cycling maintenance, weight loss active. Building toward BR100 Leg 8 (Jul 25) as a forcing function for run volume, then half-marathon goal Dec 2026.
-**Active plan file:** none — planning **week-by-week** in the weekly logs (per Roger's preference Jun 14, 2026).
-**Weekly shape:** 4 runs + 2 rides (some combined days) + 3 strength touches + daily rehab. Long trail run Sun. Bikes stay unstructured (summer) — Z2 maintenance, no intervals unless wanted.
+**Current phase:** BR100 build week 3 of 5 (week of Jun 29–Jul 5). Running primary, cycling maintenance, weight loss active. **Long-run distance is already proven — 11.13 mi w/ 1,038 ft on Jun 28 (Leg 8 is only 12.3 mi).** So the back half of the build pivots from "add miles" to **consolidation: terrain, heat adaptation, race-day fueling/pacing, arrive healthy.** Then half-marathon goal Dec 2026.
+**Active plan file:** none — planning **week-by-week** in the weekly logs (per Roger's preference Jun 14, 2026). Current week: `weekly-logs/2026-07-05.md` + `weekly-plans/2026-07-05-br100-week-3.pdf`.
+**Weekly shape:** 3–4 runs + 1–2 rides (some combined days) + 3 strength touches + daily rehab. Long trail run Sun. Bikes stay unstructured (summer) — Z2 maintenance, no intervals unless wanted. *Week 3 exception: holiday ride trip (~120 mi flat Z2 Fri/Sat, Columbus↔Yellow Springs); strength front-loaded Mon–Thu; Sun run on tired legs.*
 
 ### Upcoming Events
 
@@ -80,6 +80,7 @@
 | FTP | **230W (working estimate)** | May 17, 2026 | Bumped from 220W after Red Eagle: NP 199W @ HR 142 for 2:40 (IF 0.91 off 219W) with reported "felt good." Race data > formal test. Confirmed by Wed 5/20 over-under (max HR 164 at over targets) and Mon 5/25 long Z2 (IF 0.726, only 15 bpm cardiac drift over 4+ hrs). |
 | Cycling Z2 power / HR | 129–172W / HR 120–134 | May 24, 2026 | Working zones off 230W FTP and ~150 LTHR estimate. Validated by Mon 5/25 ride. |
 | Cycling LTHR | ~150 bpm | inferred May 17 | From Red Eagle: HR avg 142 for 2:40 at IF 0.91. Real test needed for confirmation. |
+| **Longest run (BR100 build)** | **11.13 mi, 1,038 ft, HR 132 avg / 153 max, 80-90°F** | **Jun 28, 2026** | **CVNP. Run 1:26 / walk 1:09 (hiked climbs to hold HR). Proves Leg 8 distance (12.3 mi) 4 wks early. Superb aerobic control.** |
 | Aerobic run pace (HR <135) | **11:54/mi** | May 9, 2026 | Up from 13:15 (Apr 1). |
 | Run tempo pace | **10:00/mi @ HR 147** | May 22, 2026 | Threshold benefit. Progression continues. |
 | Max on-bike HR (recent) | 164 bpm | May 20, 2026 | Wed 3×6 over-under, last over. Suggests true max ~170. |
@@ -177,4 +178,4 @@
 
 ---
 
-*Last updated: June 14, 2026 — post-FBG*
+*Last updated: June 28, 2026 — BR100 build week 2 complete (11.13 mi long run), week 3 planned*
