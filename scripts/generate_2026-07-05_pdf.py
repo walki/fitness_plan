@@ -75,7 +75,7 @@ def build_pdf(output_path):
         ("Mon Jun 29", "Recovery from the 11-miler. Walk or rest + core micro + TKEs + wrist hold.", False),
         ("Tue Jun 30", "Easy run 3-4 mi, HR <140 + Upper Push (~20 min). Rehab.", True),
         ("Wed Jul 1", "Strength Full Body Lower (~35 min) + optional easy spin 30-45 min. Rehab.", False),
-        ("Thu Jul 2", "Easy run 3 mi + Upper Pull (~20 min). Rehab. Drive to Columbus PM.", True),
+        ("Thu Jul 2", "AM easy TRAIL run 3-4 mi, HR <140 + Upper Pull (~20 min). Rehab. Drive to Columbus PM.", True),
         ("Fri Jul 3", "RIDE Columbus -> Yellow Springs, ~60 mi flat Z2, light gear. Fuel + hydrate.", True),
         ("Sat Jul 4", "RIDE Yellow Springs -> Columbus, ~60 mi flat Z2. Back-to-back endurance.", True),
         ("Sun Jul 5", "RUN ON tired legs -- 7-9 mi by feel, HR <145. Run-off-the-bike. NOT a distance push.", True),
