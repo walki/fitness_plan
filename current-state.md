@@ -57,7 +57,7 @@
 
 **Current phase:** BR100 build week 3 of 5 (week of Jun 29–Jul 5). Running primary, cycling maintenance, weight loss active. **Long-run distance is already proven — 11.13 mi w/ 1,038 ft on Jun 28 (Leg 8 is only 12.3 mi).** So the back half of the build pivots from "add miles" to **consolidation: terrain, heat adaptation, race-day fueling/pacing, arrive healthy.** Then half-marathon goal Dec 2026.
 **Active plan file:** none — planning **week-by-week** in the weekly logs (per Roger's preference Jun 14, 2026). Current week: `weekly-logs/2026-07-05.md` + `weekly-plans/2026-07-05-br100-week-3.pdf`.
-**Weekly shape:** 3–4 runs + 1–2 rides (some combined days) + 3 strength touches + daily rehab. Long trail run Sun. Bikes stay unstructured (summer) — Z2 maintenance, no intervals unless wanted. *Week 3 exception: holiday ride trip (~120 mi flat Z2 Fri/Sat, Columbus↔Yellow Springs); strength front-loaded Mon–Thu; Sun run on tired legs.*
+**Weekly shape:** 3–4 runs + 1–2 rides (some combined days) + 3 strength touches + daily rehab. Long trail run Sun. Bikes stay unstructured (summer) — Z2 maintenance, no intervals unless wanted. *Week 3 exception (revised Jul 2): holiday ride trip became a **3-day ride block** (Fri Columbus loop, Sat→Yellow Springs, Sun→Columbus, maybe Mon too), extreme heat = steady/slow. **No long run this week — it shifts to week 4 (Jul 6–12).** Mon–Thu got 2 runs (incl 6.11 mi trail w/ 786 ft) + club ride + push/core strength; Full Body Lower didn't land.*
 
 ### Upcoming Events
 
