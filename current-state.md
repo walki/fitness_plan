@@ -55,8 +55,8 @@
 
 ## 📅 Active Plan
 
-**Current phase:** BR100 build week 3 of 5 (week of Jun 29–Jul 5). Running primary, cycling maintenance, weight loss active. **Long-run distance is already proven — 11.13 mi w/ 1,038 ft on Jun 28 (Leg 8 is only 12.3 mi).** So the back half of the build pivots from "add miles" to **consolidation: terrain, heat adaptation, race-day fueling/pacing, arrive healthy.** Then half-marathon goal Dec 2026.
-**Active plan file:** none — planning **week-by-week** in the weekly logs (per Roger's preference Jun 14, 2026). Current week: `weekly-logs/2026-07-05.md` + `weekly-plans/2026-07-05-br100-week-3.pdf`.
+**Current phase:** BR100 build week 4 of 5 (week of Jul 6–12) — **last real work week before taper.** Running primary, cycling maintenance, weight loss active. **Long-run distance proven (11.13 mi w/ 1,038 ft Jun 28; Leg 8 is 12.3 mi).** Just banked a big heat/aerobic block — **~170 mi riding over 4 days (Jul 3–6) in 99°F+ heat, all easy** (great late-July heat adaptation). Week 4 job: unload ride fatigue, rebuild run rhythm, strength back on track, **Sun Jul 12 = dress-rehearsal long run** (~11-12 mi trail + race fueling/pacing). Then week 5 sharpen, Jul 20–25 taper into race.
+**Active plan file:** none — planning **week-by-week** in the weekly logs (per Roger's preference Jun 14, 2026). Current week: `weekly-logs/2026-07-12.md` + `weekly-plans/2026-07-12-br100-week-4.pdf`.
 **Weekly shape:** 3–4 runs + 1–2 rides (some combined days) + 3 strength touches + daily rehab. Long trail run Sun. Bikes stay unstructured (summer) — Z2 maintenance, no intervals unless wanted. *Week 3 exception (revised Jul 2): holiday ride trip became a **3-day ride block** (Fri Columbus loop, Sat→Yellow Springs, Sun→Columbus, maybe Mon too), extreme heat = steady/slow. **No long run this week — it shifts to week 4 (Jul 6–12).** Mon–Thu got 2 runs (incl 6.11 mi trail w/ 786 ft) + club ride + push/core strength; Full Body Lower didn't land.*
 
 ### Upcoming Events
@@ -178,4 +178,4 @@
 
 ---
 
-*Last updated: June 28, 2026 — BR100 build week 2 complete (11.13 mi long run), week 3 planned*
+*Last updated: July 6, 2026 — BR100 build week 3 complete (~170 mi/4-day heat ride block), week 4 planned (dress-rehearsal long run Sun Jul 12)*
