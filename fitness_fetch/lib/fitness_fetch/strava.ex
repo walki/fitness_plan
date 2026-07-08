@@ -25,13 +25,17 @@ defmodule FitnessFetch.Strava do
   @spec access_token() :: {:ok, String.t()} | {:error, term()}
   def access_token do
     resp =
-      Req.post!(@token_url,
-        form: [
-          client_id: fetch_env!("STRAVA_CLIENT_ID"),
-          client_secret: fetch_env!("STRAVA_CLIENT_SECRET"),
-          grant_type: "refresh_token",
-          refresh_token: fetch_env!("STRAVA_REFRESH_TOKEN")
-        ]
+      Req.request!(
+        req(
+          method: :post,
+          url: @token_url,
+          form: [
+            client_id: fetch_env!("STRAVA_CLIENT_ID"),
+            client_secret: fetch_env!("STRAVA_CLIENT_SECRET"),
+            grant_type: "refresh_token",
+            refresh_token: fetch_env!("STRAVA_REFRESH_TOKEN")
+          ]
+        )
       )
 
     case resp.body do
@@ -46,13 +50,17 @@ defmodule FitnessFetch.Strava do
   """
   @spec exchange_code(String.t()) :: map()
   def exchange_code(code) do
-    Req.post!(@token_url,
-      form: [
-        client_id: fetch_env!("STRAVA_CLIENT_ID"),
-        client_secret: fetch_env!("STRAVA_CLIENT_SECRET"),
-        grant_type: "authorization_code",
-        code: code
-      ]
+    Req.request!(
+      req(
+        method: :post,
+        url: @token_url,
+        form: [
+          client_id: fetch_env!("STRAVA_CLIENT_ID"),
+          client_secret: fetch_env!("STRAVA_CLIENT_SECRET"),
+          grant_type: "authorization_code",
+          code: code
+        ]
+      )
     ).body
   end
 
@@ -93,9 +101,13 @@ defmodule FitnessFetch.Strava do
 
   defp fetch_pages(token, after_ts, before_ts, page, acc) do
     resp =
-      Req.get!("#{@api}/athlete/activities",
-        auth: {:bearer, token},
-        params: [after: after_ts, before: before_ts, page: page, per_page: 100]
+      Req.request!(
+        req(
+          method: :get,
+          url: "#{@api}/athlete/activities",
+          auth: {:bearer, token},
+          params: [after: after_ts, before: before_ts, page: page, per_page: 100]
+        )
       )
 
     case resp.body do
@@ -110,6 +122,18 @@ defmodule FitnessFetch.Strava do
   defp date_to_unix(%Date{} = d) do
     {:ok, dt} = DateTime.new(d, ~T[00:00:00], "Etc/UTC")
     DateTime.to_unix(dt)
+  end
+
+  # Build a Req request, merging any test-injected options
+  # (`config :fitness_fetch, :req_options`) so tests can route through Req.Test
+  # instead of hitting the real Strava API.
+  defp req(opts) do
+    base = Req.new(opts)
+
+    case Application.get_env(:fitness_fetch, :req_options) do
+      nil -> base
+      extra -> Req.merge(base, extra)
+    end
   end
 
   defp fetch_env!(key) do

@@ -157,7 +157,7 @@ defmodule FitnessFetch.Format do
     miles = meters_to_miles(act["distance"])
     secs = act["moving_time"]
 
-    if is_number(miles) and miles > 0 and is_number(secs) and secs > 0 do
+    if miles > 0 and is_number(secs) and secs > 0 do
       per_mile = round(secs / miles)
       "#{div(per_mile, 60)}:#{pad(rem(per_mile, 60))}"
     end
