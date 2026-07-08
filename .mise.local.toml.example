@@ -1,0 +1,11 @@
+# Template for .mise.local.toml — copy to `.mise.local.toml` (which is gitignored)
+# and fill in real values. mise injects these into the environment for
+# `mise exec -- mix ...` in this repo.
+#
+# See fitness_fetch/README.md for how to create the Strava API app and obtain
+# the refresh token.
+
+[env]
+STRAVA_CLIENT_ID = "your-client-id"
+STRAVA_CLIENT_SECRET = "your-client-secret"
+STRAVA_REFRESH_TOKEN = "from-mix-strava-auth"

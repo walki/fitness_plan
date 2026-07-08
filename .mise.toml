@@ -1,3 +1,4 @@
 [tools]
 erlang = "28.4.1"
-elixir = "1.18.3"
+# 1.18.4 is the first 1.18 patch with Erlang/OTP 28 support (1.18.3 breaks Hex on OTP 28)
+elixir = "1.18.4"
