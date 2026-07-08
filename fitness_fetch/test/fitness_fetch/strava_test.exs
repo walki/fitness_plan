@@ -94,6 +94,56 @@ defmodule FitnessFetch.StravaTest do
     end
   end
 
+  describe "list_activities/2 gear resolution" do
+    test "attaches the gear name from the /gear endpoint" do
+      Req.Test.stub(FitnessFetch.Strava, fn conn ->
+        cond do
+          conn.request_path == "/oauth/token" ->
+            Req.Test.json(conn, %{"access_token" => "abc"})
+
+          conn.request_path == "/api/v3/gear/b123" ->
+            Req.Test.json(conn, %{"id" => "b123", "name" => "Cutthroat"})
+
+          String.starts_with?(conn.request_path, "/api/v3/athlete/activities") ->
+            body =
+              if page(conn) == 1,
+                do: [ride_with("Ride", "2026-07-04T09:00:00Z", "b123")],
+                else: []
+
+            Req.Test.json(conn, body)
+        end
+      end)
+
+      [act] = Strava.list_activities(~D[2026-06-29], ~D[2026-07-05])
+      assert act["gear_name"] == "Cutthroat"
+    end
+  end
+
+  describe "weekly_energy/2" do
+    test "attaches active calories from the /activities/:id detail endpoint" do
+      Req.Test.stub(FitnessFetch.Strava, fn conn ->
+        cond do
+          conn.request_path == "/oauth/token" ->
+            Req.Test.json(conn, %{"access_token" => "abc"})
+
+          conn.request_path == "/api/v3/activities/111" ->
+            Req.Test.json(conn, %{"id" => 111, "calories" => 512})
+
+          String.starts_with?(conn.request_path, "/api/v3/athlete/activities") ->
+            body =
+              if page(conn) == 1,
+                do: [Map.put(activity("Run", "2026-07-01T07:00:00Z"), "id", 111)],
+                else: []
+
+            Req.Test.json(conn, body)
+        end
+      end)
+
+      [act] = Strava.weekly_energy(~D[2026-06-29], ~D[2026-07-05])
+      assert act["calories"] == 512
+    end
+  end
+
   describe "local_date/1" do
     test "extracts the local calendar date" do
       assert Strava.local_date(%{"start_date_local" => "2026-07-04T09:00:00Z"}) ==
@@ -114,6 +164,21 @@ defmodule FitnessFetch.StravaTest do
       "start_date_local" => start_local,
       "distance" => 1000.0
     }
+  end
+
+  defp ride_with(name, start_local, gear_id) do
+    %{
+      "name" => name,
+      "sport_type" => "GravelRide",
+      "start_date_local" => start_local,
+      "distance" => 1000.0,
+      "gear_id" => gear_id
+    }
+  end
+
+  defp page(conn) do
+    conn = Plug.Conn.fetch_query_params(conn)
+    String.to_integer(conn.query_params["page"] || "1")
   end
 
   defp stub_token_and_activities(pages) do

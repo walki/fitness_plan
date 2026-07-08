@@ -32,38 +32,66 @@ defmodule FitnessFetch.Format do
     sport = act["sport_type"] || act["type"] || "Workout"
     {:ok, date} = FitnessFetch.Strava.local_date(act)
     day = "#{Calendar.strftime(date, "%a %b")} #{date.day}"
-
-    dist_mi = round2(meters_to_miles(act["distance"]))
-    elev_ft = round0(meters_to_feet(act["total_elevation_gain"]))
     moving = format_duration(act["moving_time"])
-    elapsed = format_duration(act["elapsed_time"])
 
-    details =
-      [
-        "  #{dist_mi} mi | #{elev_ft} ft | moving #{moving} (elapsed #{elapsed})",
-        "  #{hr_detail(act)}#{power_or_pace_detail(act, sport)}",
-        temp_detail(act)
-      ]
-      |> Enum.reject(&(&1 in [nil, ""]))
-      |> Enum.join("\n")
+    case category(sport) do
+      :strength ->
+        """
+        #{name} — #{sport} — #{day}
+          #{moving}#{if hr_cell(act) != "—", do: " | HR #{hr_cell(act)}", else: ""}
+          strength row:
+            #{strength_row(name, day, sport, moving)}
+        """
 
-    """
-    #{name} — #{sport} — #{day}
-    #{details}
-      log row:
-        #{table_row(act, sport, day, dist_mi, elev_ft, moving)}
-    """
+      cat ->
+        dist_mi = round2(meters_to_miles(act["distance"]))
+        elev_ft = round0(meters_to_feet(act["total_elevation_gain"]))
+        elapsed = format_duration(act["elapsed_time"])
+
+        details =
+          [
+            "  #{dist_mi} mi | #{elev_ft} ft | moving #{moving} (elapsed #{elapsed})",
+            "  #{hr_detail(act)}#{power_or_pace_detail(act, cat)}",
+            temp_detail(act)
+          ]
+          |> Enum.reject(&(&1 in [nil, ""]))
+          |> Enum.join("\n")
+
+        """
+        #{name} — #{sport} — #{day}
+        #{details}
+          log row:
+            #{table_row(cat, act, sport, day, dist_mi, elev_ft, moving)}
+        """
+    end
   end
 
   # --- ready-to-paste weekly-log table rows -------------------------------
 
-  defp table_row(act, sport, day, dist_mi, elev_ft, moving) do
-    if ride?(sport) do
-      # | Session | Date | Bike | Duration | Distance | NP/Avg Pwr | Avg HR | RPE | Notes |
-      "| #{act["name"]} | #{day} | ? | #{moving} | #{dist_mi} mi | #{power_cell(act)} | #{hr_cell(act)} | | #{elev_ft} ft. |"
-    else
-      # | Session | Date | Type | Duration | Distance | Avg Pace | Avg HR | RPE | Notes |
-      "| #{act["name"]} | #{day} | #{sport} | #{moving} | #{dist_mi} mi | #{pace_cell(act)} | #{hr_cell(act)} | | #{elev_ft} ft. |"
+  # Cycling table: | Session | Date | Bike | Duration | Distance | NP/Avg Pwr | Avg HR | RPE | Notes |
+  defp table_row(:ride, act, _sport, day, dist_mi, elev_ft, moving) do
+    "| #{act["name"]} | #{day} | #{bike(act)} | #{moving} | #{dist_mi} mi | #{power_cell(act)} | #{hr_cell(act)} | | #{elev_ft} ft. |"
+  end
+
+  # Running table: | Session | Date | Type | Duration | Distance | Avg Pace | Avg HR | RPE | Notes |
+  defp table_row(_cat, act, sport, day, dist_mi, elev_ft, moving) do
+    "| #{act["name"]} | #{day} | #{sport} | #{moving} | #{dist_mi} mi | #{pace_cell(act)} | #{hr_cell(act)} | | #{elev_ft} ft. |"
+  end
+
+  # Strength table: | Session | Date | Type | Notes |
+  defp strength_row(name, day, sport, moving) do
+    "| #{name} | #{day} | #{sport} | #{moving} session |"
+  end
+
+  defp bike(act), do: act["gear_name"] || "?"
+
+  # Classify sport type into the log table it belongs in.
+  defp category(sport) do
+    cond do
+      String.contains?(sport, ["Ride", "Bike", "Gravel", "Velomobile"]) -> :ride
+      String.contains?(sport, ["Run", "Walk", "Hike"]) -> :run
+      String.contains?(sport, ["Weight", "Workout", "Strength", "Crossfit"]) -> :strength
+      true -> :other
     end
   end
 
@@ -105,21 +133,18 @@ defmodule FitnessFetch.Format do
     end
   end
 
-  defp power_or_pace_detail(act, sport) do
-    cond do
-      ride?(sport) && act["average_watts"] ->
-        speed = round1(act["average_speed"] * @ms_to_mph)
-        " | #{power_cell(act)} | #{speed} mph"
+  defp power_or_pace_detail(act, :ride) do
+    speed = round1((act["average_speed"] || 0) * @ms_to_mph)
 
-      ride?(sport) ->
-        speed = round1((act["average_speed"] || 0) * @ms_to_mph)
-        " | #{speed} mph"
+    if act["average_watts"],
+      do: " | #{power_cell(act)} | #{speed} mph",
+      else: " | #{speed} mph"
+  end
 
-      true ->
-        case pace_per_mile(act) do
-          nil -> ""
-          pace -> " | #{pace}/mi"
-        end
+  defp power_or_pace_detail(act, _cat) do
+    case pace_per_mile(act) do
+      nil -> ""
+      pace -> " | #{pace}/mi"
     end
   end
 
@@ -150,8 +175,6 @@ defmodule FitnessFetch.Format do
   end
 
   # --- helpers ------------------------------------------------------------
-
-  defp ride?(sport), do: String.contains?(sport, ["Ride", "Bike", "Gravel", "Velomobile"])
 
   defp pace_per_mile(act) do
     miles = meters_to_miles(act["distance"])

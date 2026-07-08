@@ -78,6 +78,14 @@ defmodule FitnessFetch.FormatTest do
       assert out =~ "~151W est"
     end
 
+    test "resolved gear name fills the Bike column (else '?')" do
+      named = Format.report([ride(%{"gear_name" => "Cutthroat"})], @from, @to)
+      assert named =~ "| Cutthroat |"
+
+      unnamed = Format.report([ride()], @from, @to)
+      assert unnamed =~ "| ? |"
+    end
+
     test "average temperature converts °C → °F with the device-temp caveat" do
       out = Format.report([ride(%{"average_temp" => 35})], @from, @to)
       # 35°C = 95°F
@@ -100,6 +108,33 @@ defmodule FitnessFetch.FormatTest do
     test "run without heart rate shows a blank HR cell" do
       out = Format.report([run(%{"has_heartrate" => false, "average_heartrate" => nil})], @from, @to)
       assert out =~ "| — |"
+    end
+  end
+
+  describe "strength" do
+    defp strength(overrides \\ %{}) do
+      Map.merge(
+        %{
+          "name" => "Upper Push + Arm",
+          "sport_type" => "WeightTraining",
+          "start_date_local" => "2026-07-01T20:00:00Z",
+          "moving_time" => 1593,
+          "distance" => 0.0,
+          "total_elevation_gain" => 0.0,
+          "has_heartrate" => false
+        },
+        overrides
+      )
+    end
+
+    test "renders a strength-table row (not a ride/run row)" do
+      out = Format.report([strength()], @from, @to)
+
+      # 1593 s = 26:33
+      assert out =~ "strength row:"
+      assert out =~ "| Upper Push + Arm | Wed Jul 1 | WeightTraining | 26:33 session |"
+      # not the cycling/running "log row:" format
+      refute out =~ "log row:"
     end
   end
 

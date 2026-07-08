@@ -66,12 +66,34 @@ defmodule FitnessFetch.Strava do
 
   @doc """
   List activities whose LOCAL start date falls within `[from_date, to_date]`
-  (inclusive), oldest first. Returns raw Strava activity maps.
+  (inclusive), oldest first, with the gear name resolved onto each activity
+  (`"gear_name"`). Returns raw Strava activity maps.
   """
   @spec list_activities(Date.t(), Date.t()) :: [map()]
   def list_activities(%Date{} = from_date, %Date{} = to_date) do
     {:ok, token} = access_token()
 
+    token
+    |> do_list(from_date, to_date)
+    |> attach_gear_names(token)
+  end
+
+  @doc """
+  Like `list_activities/2` but also resolves each activity's active calories
+  (`"calories"`) via the per-activity detail endpoint. Used by `mix energy` to
+  build a self-computed daily burn (resting-from-weight + active).
+  """
+  @spec weekly_energy(Date.t(), Date.t()) :: [map()]
+  def weekly_energy(%Date{} = from_date, %Date{} = to_date) do
+    {:ok, token} = access_token()
+
+    token
+    |> do_list(from_date, to_date)
+    |> attach_gear_names(token)
+    |> Enum.map(fn act -> Map.put(act, "calories", activity_calories(act["id"], token)) end)
+  end
+
+  defp do_list(token, from_date, to_date) do
     # Pad the epoch window by a day on each side to sidestep timezone edges,
     # then filter precisely on each activity's LOCAL start date.
     after_ts = date_to_unix(Date.add(from_date, -1))
@@ -89,6 +111,38 @@ defmodule FitnessFetch.Strava do
       end
     end)
     |> Enum.sort_by(& &1["start_date_local"])
+  end
+
+  # Resolve each unique gear_id to its Strava name once, then attach.
+  defp attach_gear_names(activities, token) do
+    names =
+      activities
+      |> Enum.map(& &1["gear_id"])
+      |> Enum.reject(&is_nil/1)
+      |> Enum.uniq()
+      |> Map.new(fn id -> {id, gear_name(id, token)} end)
+
+    Enum.map(activities, fn act ->
+      case act["gear_id"] do
+        nil -> act
+        id -> Map.put(act, "gear_name", names[id])
+      end
+    end)
+  end
+
+  @doc "Resolve a gear id (e.g. \"b123\") to its Strava name; nil if unavailable."
+  @spec gear_name(String.t(), String.t()) :: String.t() | nil
+  def gear_name(gear_id, token) do
+    case Req.request!(req(method: :get, url: "#{@api}/gear/#{gear_id}", auth: {:bearer, token})).body do
+      %{"name" => name} -> name
+      _ -> nil
+    end
+  end
+
+  @doc "Active calories (kcal) for one activity, from the detail endpoint; nil if absent."
+  @spec activity_calories(integer() | String.t(), String.t()) :: number() | nil
+  def activity_calories(activity_id, token) do
+    Req.request!(req(method: :get, url: "#{@api}/activities/#{activity_id}", auth: {:bearer, token})).body["calories"]
   end
 
   @doc "Extract the local calendar `Date` from an activity map."

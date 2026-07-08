@@ -9,31 +9,31 @@ supervised OTP app on purpose — today it runs as manual mix tasks, but the
 supervision tree gives us room to add scheduled `GenServer`/`Supervisor`-based
 fetching later.
 
+> Run all commands **from this `fitness_fetch/` directory** — that's where
+> `.mise.local.toml` (credentials) lives, and mise loads env from the current
+> directory upward.
+
 ## Toolchain
 
-Managed by **mise** (see `../.mise.toml`): Erlang 28.4.1 + Elixir 1.18.3.
+Managed by **mise**: Erlang 28.5.0.3 + Elixir 1.20.2 (tools pinned in
+`../.mise.toml`).
 
 ```sh
-mise install          # once, from the repo root — installs the pinned toolchain
-```
-
-Run mix commands through mise so the pinned toolchain **and** the credentials in
-`../.mise.local.toml` are loaded:
-
-```sh
+mise install          # once — installs the pinned toolchain (prebuilt on Windows)
 mise exec -- mix deps.get
 mise exec -- mix compile
+mise exec -- mix test
 ```
 
 ## One-time Strava setup
 
 1. **Create a Strava API application** at <https://www.strava.com/settings/api>.
    - Authorization Callback Domain: `localhost`
+   - Upload any icon (there's one at `assets/app_icon.png`).
    - Note the **Client ID** and **Client Secret**.
 
-2. **Add credentials.** Copy `../.mise.local.toml.example` to
-   `../.mise.local.toml` and fill in `STRAVA_CLIENT_ID` and
-   `STRAVA_CLIENT_SECRET`. (This file is gitignored.)
+2. **Add credentials.** Copy `.mise.local.toml.example` to `.mise.local.toml`
+   and fill in `STRAVA_CLIENT_ID` and `STRAVA_CLIENT_SECRET`. (Gitignored.)
 
 3. **Authorize and get a refresh token:**
 
@@ -48,7 +48,7 @@ mise exec -- mix compile
    mise exec -- mix strava.auth <code>   # prints your refresh_token
    ```
 
-   Paste the printed `STRAVA_REFRESH_TOKEN` into `../.mise.local.toml`.
+   Paste the printed `STRAVA_REFRESH_TOKEN` into `.mise.local.toml`.
 
 ## Fetching activities
 
@@ -59,21 +59,50 @@ mise exec -- mix strava.fetch --week 2026-07-12             # Mon–Sun week end
 ```
 
 Output: a details block per activity plus a **ready-to-paste markdown table
-row** in the weekly-log format (cycling vs running chosen by sport type). Power
-comes through as `NP / avg` when a power meter was used, `~W est` for Strava's
-estimate, or `HR/RPE` for the Cutthroat (no power meter). Distances/elevations
-are converted from Strava's SI units to miles/feet.
+row** in the weekly-log format (cycling / running / strength chosen by sport
+type). Distances and elevations are converted from Strava's SI units. Notes:
 
-`RPE` and the `Bike` column are left blank for you to fill — Strava doesn't know
-your perceived effort or which bike you rode.
+- **Bike column** is the resolved gear name (e.g. `Salsa Cutthroat`), or `?` if
+  Strava has no gear on the activity.
+- **Power** shows `NP / avg` for power-meter rides, `~W est` for Strava's
+  estimate, or `HR/RPE` when there's nothing.
+- **Strength** (`WeightTraining` etc.) renders a 4-column strength-table row.
+- **`RPE`** is left blank — Strava doesn't know perceived effort.
+
+## Daily calorie burn
+
+Self-computed daily burn = **resting** (scaled from body weight) + **active**
+(per-activity calories from Strava, netted of the baseline burned during the
+activity so it isn't double-counted). Strava estimates rides from power, so this
+dodges the HR-dropout problem that tanks Garmin's daily estimate.
+
+```sh
+mise exec -- mix energy --week 2026-07-05 \
+  --weights 2026-06-29=188.8,2026-06-30=189.4,2026-07-01=189.2,2026-07-02=188.0
+```
+
+Pass whatever daily weights you have as `date=lbs` pairs; missing days carry the
+last known weight forward (marked `*` — resting barely moves, so it's fine).
+Output is a markdown table for the weekly-log body-metrics section (pair with
+your MFP "Cal In" to get net).
+
+The resting anchor is **2034 cal @ 187.4 lb** (Garmin, Jul 2026). Re-anchor as
+weight drops via `config :fitness_fetch, :resting_anchor, {weight, cal}`.
+
+Runs consistently ~50–200 cal under Garmin's daily total because we don't count
+non-exercise daily movement (steps/NEAT) — a consistent, predictable offset, so
+the trend stays reliable.
 
 ## Layout
 
 ```
-lib/fitness_fetch/strava.ex      Strava API client (token refresh + activities)
-lib/fitness_fetch/format.ex      SI→imperial conversion + weekly-log formatting
+lib/fitness_fetch/strava.ex      Strava API client (tokens, activities, gear, calories)
+lib/fitness_fetch/format.ex      SI→imperial + weekly-log row formatting
+lib/fitness_fetch/energy.ex      resting-from-weight + active-above-resting math
+lib/fitness_fetch/week.ex        Mon–Sun date-range resolution for the tasks
 lib/mix/tasks/strava.auth.ex     one-time OAuth helper
-lib/mix/tasks/strava.fetch.ex    fetch + print for a date range
+lib/mix/tasks/strava.fetch.ex    fetch + print activities for a date range
+lib/mix/tasks/energy.ex          daily calorie-burn table
 ```
 
 ## Roadmap
