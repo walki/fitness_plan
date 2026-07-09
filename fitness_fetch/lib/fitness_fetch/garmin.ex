@@ -132,7 +132,9 @@ defmodule FitnessFetch.Garmin do
     cat |> to_string() |> String.split(~r/[_\s]+/) |> Enum.map_join(" ", &String.capitalize/1)
   end
 
-  # Garmin timestamps are epoch-ms in local time.
+  # Garmin's *Local epoch-ms are already shifted to local wall-clock, so we read
+  # them as UTC and format WITHOUT any tz conversion — that yields the correct
+  # local time. Do NOT add a timezone shift here.
   defp ms_to_time(ms) when is_integer(ms) do
     ms |> DateTime.from_unix!(:millisecond) |> Calendar.strftime("%-I:%M %p")
   end

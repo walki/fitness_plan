@@ -5,12 +5,19 @@ defmodule FitnessFetch.GarminTest do
 
   describe "parse_sleep/2" do
     test "normalizes score, quality, duration and times" do
+      # Garmin's *Local epoch-ms fields are already shifted to local wall-clock,
+      # so we render them as-is (NO timezone conversion). Build the ms as if the
+      # wall-clock were UTC and assert the same wall-clock comes back out —
+      # locking in "don't apply a tz" (see Roger's Eastern-time confirmation).
+      bed_ms = DateTime.new!(~D[2026-06-30], ~T[23:18:00], "Etc/UTC") |> DateTime.to_unix(:millisecond)
+      wake_ms = DateTime.new!(~D[2026-07-01], ~T[07:31:00], "Etc/UTC") |> DateTime.to_unix(:millisecond)
+
       body = %{
         "dailySleepDTO" => %{
           "sleepTimeSeconds" => 23_880,
           "sleepScores" => %{"overall" => %{"value" => 66, "qualifierKey" => "FAIR"}},
-          "sleepStartTimestampLocal" => 1_751_330_760_000,
-          "sleepEndTimestampLocal" => 1_751_354_640_000
+          "sleepStartTimestampLocal" => bed_ms,
+          "sleepEndTimestampLocal" => wake_ms
         }
       }
 
@@ -18,8 +25,8 @@ defmodule FitnessFetch.GarminTest do
       assert s.score == 66
       assert s.quality == "Fair"
       assert s.duration_seconds == 23_880
-      assert s.bedtime =~ ~r/\d{1,2}:\d{2}\s(AM|PM)/
-      assert s.wake =~ ~r/\d{1,2}:\d{2}\s(AM|PM)/
+      assert s.bedtime == "11:18 PM"
+      assert s.wake == "7:31 AM"
     end
 
     test "returns nil when the DTO is missing" do
