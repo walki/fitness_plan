@@ -40,7 +40,7 @@ defmodule FitnessFetch.Format do
         #{name} — #{sport} — #{day}
           #{moving}#{if hr_cell(act) != "—", do: " | HR #{hr_cell(act)}", else: ""}
           strength row:
-            #{strength_row(name, day, sport, moving)}
+            #{strength_row(name, day, sport, moving)}#{logged_block(act, "logged (Hevy)")}
         """
 
       cat ->
@@ -61,8 +61,26 @@ defmodule FitnessFetch.Format do
         #{name} — #{sport} — #{day}
         #{details}
           log row:
-            #{table_row(cat, act, sport, day, dist_mi, elev_ft, moving)}
+            #{table_row(cat, act, sport, day, dist_mi, elev_ft, moving)}#{logged_block(act, "notes")}
         """
+    end
+  end
+
+  # Show the Strava description (where Hevy writes the logged sets/reps) so we
+  # can compare what was actually done vs. what was planned. Indented, multiline.
+  defp logged_block(act, label) do
+    case act["description"] do
+      d when is_binary(d) and d != "" ->
+        body =
+          d
+          |> String.trim_trailing()
+          |> String.split("\n")
+          |> Enum.map_join("\n", &("        " <> &1))
+
+        "\n  #{label}:\n#{body}"
+
+      _ ->
+        ""
     end
   end
 

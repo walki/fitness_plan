@@ -23,7 +23,7 @@ defmodule Mix.Tasks.Strava.Fetch do
       OptionParser.parse(argv, strict: [from: :string, to: :string, week: :string])
 
     {from, to} = Week.range(opts)
-    activities = Strava.list_activities(from, to)
+    activities = Strava.list_detailed(from, to)
     IO.puts(Format.report(activities, from, to))
   end
 end

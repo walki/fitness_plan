@@ -119,15 +119,15 @@ defmodule FitnessFetch.StravaTest do
     end
   end
 
-  describe "weekly_energy/2" do
-    test "attaches active calories from the /activities/:id detail endpoint" do
+  describe "list_detailed/2" do
+    test "merges calories and description from the /activities/:id detail endpoint" do
       Req.Test.stub(FitnessFetch.Strava, fn conn ->
         cond do
           conn.request_path == "/oauth/token" ->
             Req.Test.json(conn, %{"access_token" => "abc"})
 
           conn.request_path == "/api/v3/activities/111" ->
-            Req.Test.json(conn, %{"id" => 111, "calories" => 512})
+            Req.Test.json(conn, %{"id" => 111, "calories" => 512, "description" => "Set 1: 40 lbs x 8"})
 
           String.starts_with?(conn.request_path, "/api/v3/athlete/activities") ->
             body =
@@ -139,8 +139,9 @@ defmodule FitnessFetch.StravaTest do
         end
       end)
 
-      [act] = Strava.weekly_energy(~D[2026-06-29], ~D[2026-07-05])
+      [act] = Strava.list_detailed(~D[2026-06-29], ~D[2026-07-05])
       assert act["calories"] == 512
+      assert act["description"] == "Set 1: 40 lbs x 8"
     end
   end
 

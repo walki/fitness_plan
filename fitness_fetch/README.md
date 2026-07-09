@@ -66,8 +66,15 @@ type). Distances and elevations are converted from Strava's SI units. Notes:
   Strava has no gear on the activity.
 - **Power** shows `NP / avg` for power-meter rides, `~W est` for Strava's
   estimate, or `HR/RPE` when there's nothing.
-- **Strength** (`WeightTraining` etc.) renders a 4-column strength-table row.
+- **Strength** (`WeightTraining` etc.) renders a 4-column strength-table row,
+  followed by the **`logged (Hevy)`** block — the actual sets/reps Hevy writes
+  into the Strava description (compare against what was planned).
+- Cardio activities show their description as a `notes` block when present.
 - **`RPE`** is left blank — Strava doesn't know perceived effort.
+
+`strava.fetch` makes one extra detail request per activity to pull descriptions
+(and calories), so it's a bit slower than a bare listing — worth it for the
+logged-workout detail.
 
 ## Daily calorie burn
 

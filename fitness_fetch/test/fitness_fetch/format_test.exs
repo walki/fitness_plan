@@ -86,6 +86,14 @@ defmodule FitnessFetch.FormatTest do
       assert unnamed =~ "| ? |"
     end
 
+    test "shows a ride description as notes (and omits the label when absent)" do
+      with_notes = Format.report([ride(%{"description" => "club ride, took it easy"})], @from, @to)
+      assert with_notes =~ "notes:"
+      assert with_notes =~ "club ride, took it easy"
+
+      refute Format.report([ride()], @from, @to) =~ "notes:"
+    end
+
     test "average temperature converts °C → °F with the device-temp caveat" do
       out = Format.report([ride(%{"average_temp" => 35})], @from, @to)
       # 35°C = 95°F
@@ -135,6 +143,19 @@ defmodule FitnessFetch.FormatTest do
       assert out =~ "| Upper Push + Arm | Wed Jul 1 | WeightTraining | 26:33 session |"
       # not the cycling/running "log row:" format
       refute out =~ "log row:"
+    end
+
+    test "surfaces the Hevy description (logged sets) when present" do
+      out =
+        Format.report(
+          [strength(%{"description" => "Goblet Squat\nSet 1: 40 lbs x 8\nSet 2: 40 lbs x 8"})],
+          @from,
+          @to
+        )
+
+      assert out =~ "logged (Hevy):"
+      assert out =~ "Goblet Squat"
+      assert out =~ "Set 1: 40 lbs x 8"
     end
   end
 

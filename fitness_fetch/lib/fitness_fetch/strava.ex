@@ -79,19 +79,24 @@ defmodule FitnessFetch.Strava do
   end
 
   @doc """
-  Like `list_activities/2` but also resolves each activity's active calories
-  (`"calories"`) via the per-activity detail endpoint. Used by `mix energy` to
-  build a self-computed daily burn (resting-from-weight + active).
+  Like `list_activities/2` but also pulls each activity's per-activity detail —
+  merging in `"description"` (where the Hevy app logs the actual workout) and
+  `"calories"` (active kcal). One extra request per activity. Used by
+  `mix strava.fetch` (to show logged workout details) and `mix energy`.
   """
-  @spec weekly_energy(Date.t(), Date.t()) :: [map()]
-  def weekly_energy(%Date{} = from_date, %Date{} = to_date) do
+  @spec list_detailed(Date.t(), Date.t()) :: [map()]
+  def list_detailed(%Date{} = from_date, %Date{} = to_date) do
     {:ok, token} = access_token()
 
     token
     |> do_list(from_date, to_date)
     |> attach_gear_names(token)
-    |> Enum.map(fn act -> Map.put(act, "calories", activity_calories(act["id"], token)) end)
+    |> attach_details(token)
   end
+
+  @doc "Backwards-compatible alias for `list_detailed/2` (calories + description)."
+  @spec weekly_energy(Date.t(), Date.t()) :: [map()]
+  def weekly_energy(%Date{} = from, %Date{} = to), do: list_detailed(from, to)
 
   defp do_list(token, from_date, to_date) do
     # Pad the epoch window by a day on each side to sidestep timezone edges,
@@ -139,10 +144,31 @@ defmodule FitnessFetch.Strava do
     end
   end
 
-  @doc "Active calories (kcal) for one activity, from the detail endpoint; nil if absent."
-  @spec activity_calories(integer() | String.t(), String.t()) :: number() | nil
-  def activity_calories(activity_id, token) do
-    Req.request!(req(method: :get, url: "#{@api}/activities/#{activity_id}", auth: {:bearer, token})).body["calories"]
+  # Fetch each activity's detail once, merging in the fields the list endpoint
+  # omits: "description" (Hevy's logged workout) and "calories" (active kcal).
+  defp attach_details(activities, token) do
+    Enum.map(activities, fn act ->
+      case act["id"] do
+        nil ->
+          act
+
+        id ->
+          detail = activity_detail(id, token)
+
+          act
+          |> Map.put("description", detail["description"])
+          |> Map.put("calories", detail["calories"])
+      end
+    end)
+  end
+
+  @doc "Full detail map for one activity (includes description + calories)."
+  @spec activity_detail(integer() | String.t(), String.t()) :: map()
+  def activity_detail(activity_id, token) do
+    case Req.request!(req(method: :get, url: "#{@api}/activities/#{activity_id}", auth: {:bearer, token})).body do
+      %{} = body -> body
+      _ -> %{}
+    end
   end
 
   @doc "Extract the local calendar `Date` from an activity map."
