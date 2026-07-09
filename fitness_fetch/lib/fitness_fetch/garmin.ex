@@ -114,7 +114,7 @@ defmodule FitnessFetch.Garmin do
       systolic: sys,
       diastolic: dia,
       pulse: m["pulse"],
-      category: m["category"] || category_for(sys, dia)
+      category: humanize_category(m["categoryName"] || m["category"]) || category_for(sys, dia)
     }
   end
 
@@ -124,6 +124,13 @@ defmodule FitnessFetch.Garmin do
 
   defp humanize_quality(nil), do: nil
   defp humanize_quality(key), do: key |> to_string() |> String.capitalize()
+
+  # "NORMAL" -> "Normal", "STAGE_1" -> "Stage 1"
+  defp humanize_category(nil), do: nil
+
+  defp humanize_category(cat) do
+    cat |> to_string() |> String.split(~r/[_\s]+/) |> Enum.map_join(" ", &String.capitalize/1)
+  end
 
   # Garmin timestamps are epoch-ms in local time.
   defp ms_to_time(ms) when is_integer(ms) do
@@ -137,10 +144,18 @@ defmodule FitnessFetch.Garmin do
     {DateTime.to_date(dt), Calendar.strftime(dt, "%-I:%M %p")}
   end
 
+  # Garmin BP local timestamps look like "2026-06-30T07:39:08.0" — ISO-ish but
+  # with NO timezone offset, so parse as a NaiveDateTime.
   defp split_timestamp(iso) when is_binary(iso) do
-    case DateTime.from_iso8601(iso) do
-      {:ok, dt, _} -> {DateTime.to_date(dt), Calendar.strftime(dt, "%-I:%M %p")}
-      _ -> {nil, nil}
+    case NaiveDateTime.from_iso8601(iso) do
+      {:ok, ndt} ->
+        {NaiveDateTime.to_date(ndt), Calendar.strftime(ndt, "%-I:%M %p")}
+
+      _ ->
+        case DateTime.from_iso8601(iso) do
+          {:ok, dt, _} -> {DateTime.to_date(dt), Calendar.strftime(dt, "%-I:%M %p")}
+          _ -> {nil, nil}
+        end
     end
   end
 

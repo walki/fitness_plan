@@ -39,7 +39,9 @@ defmodule FitnessFetch.GarminTest do
   end
 
   describe "parse_blood_pressure/1" do
-    test "flattens measurementSummaries" do
+    test "flattens measurementSummaries with real Garmin fields" do
+      # Shape confirmed live: local timestamp is an offset-less ISO string,
+      # category comes as categoryName.
       body = %{
         "measurementSummaries" => [
           %{
@@ -49,7 +51,8 @@ defmodule FitnessFetch.GarminTest do
                 "diastolic" => 77,
                 "pulse" => 52,
                 "category" => "NORMAL",
-                "measurementTimestampLocal" => 1_751_269_140_000
+                "categoryName" => "NORMAL",
+                "measurementTimestampLocal" => "2026-06-30T07:39:08.0"
               }
             ]
           }
@@ -60,7 +63,9 @@ defmodule FitnessFetch.GarminTest do
       assert reading.systolic == 114
       assert reading.diastolic == 77
       assert reading.pulse == 52
-      assert reading.category == "NORMAL"
+      assert reading.category == "Normal"
+      assert reading.date == ~D[2026-06-30]
+      assert reading.time == "7:39 AM"
     end
 
     test "derives an AHA category when Garmin omits one" do
