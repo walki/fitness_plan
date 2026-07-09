@@ -93,21 +93,50 @@ Runs consistently ~50–200 cal under Garmin's daily total because we don't coun
 non-exercise daily movement (steps/NEAT) — a consistent, predictable offset, so
 the trend stays reliable.
 
+## Garmin wellness (sleep / resting HR / blood pressure)
+
+Garmin has **no official API**. This uses the same reverse-engineered handshake
+as the Python `garth` library: SSO sign-in → OAuth1 → OAuth2 bearer, then the
+undocumented `connectapi.garmin.com` wellness endpoints.
+
+1. Put `GARMIN_EMAIL` / `GARMIN_PASSWORD` in `.mise.local.toml`.
+2. Fetch a week:
+
+   ```sh
+   mise exec -- mix garmin.wellness --week 2026-07-12
+   ```
+
+Output: weekly-log tables for **sleep** (score/quality/duration/bedtime/wake),
+**resting HR**, and **BP** (reading/pulse/category). Tokens are cached to
+`~/.fitness_fetch/garmin_token.json` and the short-lived OAuth2 token is
+refreshed automatically.
+
+> **The SSO login is the fragile part** — Cloudflare can block it and **MFA is
+> not yet supported** (the task errors clearly if Garmin returns an MFA
+> challenge). Escape hatch: obtain an OAuth2 token elsewhere (e.g. Python
+> `garth`) and set `GARMIN_BEARER` in `.mise.local.toml`; everything downstream
+> works regardless of the login flow. The data + formatting layers are unit
+> tested; the live handshake needs real credentials to validate.
+
 ## Layout
 
 ```
-lib/fitness_fetch/strava.ex      Strava API client (tokens, activities, gear, calories)
-lib/fitness_fetch/format.ex      SI→imperial + weekly-log row formatting
-lib/fitness_fetch/energy.ex      resting-from-weight + active-above-resting math
-lib/fitness_fetch/week.ex        Mon–Sun date-range resolution for the tasks
-lib/mix/tasks/strava.auth.ex     one-time OAuth helper
-lib/mix/tasks/strava.fetch.ex    fetch + print activities for a date range
-lib/mix/tasks/energy.ex          daily calorie-burn table
+lib/fitness_fetch/strava.ex        Strava API client (tokens, activities, gear, calories)
+lib/fitness_fetch/format.ex        SI→imperial + weekly-log row formatting
+lib/fitness_fetch/energy.ex        resting-from-weight + active-above-resting math
+lib/fitness_fetch/week.ex          Mon–Sun date-range resolution for the tasks
+lib/fitness_fetch/garmin.ex        Garmin wellness client (sleep, RHR, BP)
+lib/fitness_fetch/garmin/auth.ex   Garmin SSO→OAuth1→OAuth2 login + token cache
+lib/fitness_fetch/garmin/format.ex Garmin wellness → weekly-log tables
+lib/mix/tasks/strava.auth.ex       one-time Strava OAuth helper
+lib/mix/tasks/strava.fetch.ex      fetch + print activities for a date range
+lib/mix/tasks/energy.ex            daily calorie-burn table
+lib/mix/tasks/garmin.wellness.ex   fetch + print a week of Garmin wellness
 ```
 
 ## Roadmap
 
-- **Garmin** (sleep, BP, resting HR) via a Garmin Connect client.
 - **MyFitnessPal** (food, weight) — hardest; no official API.
+- Garmin **MFA** support (interactive code step).
 - Scheduled/automatic fetching using the supervision tree once the manual flow
   proves out.

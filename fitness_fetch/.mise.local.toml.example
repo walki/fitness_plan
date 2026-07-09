@@ -9,3 +9,10 @@
 STRAVA_CLIENT_ID = "your-client-id"
 STRAVA_CLIENT_SECRET = "your-client-secret"
 STRAVA_REFRESH_TOKEN = "from-mix-strava-auth"
+
+# Garmin Connect (sleep / resting HR / blood pressure)
+GARMIN_EMAIL = "you@example.com"
+GARMIN_PASSWORD = "your-garmin-password"
+# Escape hatch if SSO login fails (Cloudflare/MFA): an OAuth2 bearer token
+# obtained elsewhere (e.g. Python garth). Overrides the email/password flow.
+# GARMIN_BEARER = "..."

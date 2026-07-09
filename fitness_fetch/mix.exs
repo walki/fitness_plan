@@ -23,6 +23,7 @@ defmodule FitnessFetch.MixProject do
   defp deps do
     [
       {:req, "~> 0.5"},
+      {:jason, "~> 1.4"},
       # Req.Test routes requests through a Plug stub in the test env
       {:plug, "~> 1.16", only: :test}
     ]
