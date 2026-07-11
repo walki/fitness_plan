@@ -23,8 +23,19 @@ defmodule FitnessFetch.Intervals.FormatTest do
     ]
 
     out = Format.report(activities, [], @from, @to)
-    assert out =~ "| Jul 9 | Did not miss the rain | Ride | 136 | 70% | 161W | 1.3 | 4.2% | 124 (160 max) |"
+    # IF shown as a decimal (0.70), EF to 2 dp, decoupling as %
+    assert out =~ "| Jul 9 | Did not miss the rain | Ride | 136 | 0.70 | 161W | 1.30 | 4.2% | 124 (160 max) |"
     assert out =~ "FTP intervals.icu assumed: 230W"
+  end
+
+  test "flags activities intervals hasn't processed yet (no type/name)" do
+    activities = [
+      %{date: ~D[2026-07-10], name: nil, type: nil, tss: nil, intensity: nil, ftp: nil, np: nil, ef: nil, decoupling: nil, avg_hr: nil, max_hr: nil}
+    ]
+
+    out = Format.report(activities, [], @from, @to)
+    assert out =~ "not yet processed by intervals.icu"
+    assert out =~ "Jul 10"
   end
 
   test "form section shows CTL/ATL/form and calls out the latest" do

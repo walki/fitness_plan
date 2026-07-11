@@ -21,9 +21,11 @@ defmodule FitnessFetch.Intervals.Format do
   def activities_section([]), do: "### Activity metrics\n(no activities)"
 
   def activities_section(activities) do
+    {complete, incomplete} = Enum.split_with(activities, fn a -> a.type || a.name end)
+
     rows =
-      Enum.map(activities, fn a ->
-        "| #{day(a.date)} | #{blank(a.name)} | #{blank(a.type)} | #{blank(a.tss)} | #{pct(a.intensity)} | #{watts(a.np)} | #{blank(a.ef)} | #{pct(a.decoupling)} | #{hr(a)} |"
+      Enum.map(complete, fn a ->
+        "| #{day(a.date)} | #{blank(a.name)} | #{blank(a.type)} | #{blank(a.tss)} | #{iff(a.intensity)} | #{watts(a.np)} | #{ef(a.ef)} | #{pct(a.decoupling)} | #{hr(a)} |"
       end)
 
     """
@@ -32,8 +34,17 @@ defmodule FitnessFetch.Intervals.Format do
     | Date | Activity | Type | TSS | IF | NP | EF | Decoupling | HR |
     |------|----------|------|-----|----|----|----|-----------|-----|
     #{Enum.join(rows, "\n")}
-    #{ftp_note(activities)}
+    #{ftp_note(complete)}#{incomplete_note(incomplete)}
     """
+  end
+
+  # intervals sometimes returns activity stubs (type/name/metrics not yet
+  # processed — e.g. backfill still syncing). Flag them rather than print blanks.
+  defp incomplete_note([]), do: ""
+
+  defp incomplete_note(incomplete) do
+    days = Enum.map_join(incomplete, ", ", &day(&1.date))
+    "\n#{length(incomplete)} activity(ies) not yet processed by intervals.icu (no type/metrics — likely backfill still syncing): #{days}"
   end
 
   # Surface the FTP intervals.icu assumed — TSS/IF/spike-fixing all key off it,
@@ -84,8 +95,15 @@ defmodule FitnessFetch.Intervals.Format do
   defp signed(v) when is_number(v) and v > 0, do: "+#{v}"
   defp signed(v), do: to_string(v)
 
+  # intervals reports IF as a percent (93.2 → 0.93); show our decimal convention.
+  defp iff(nil), do: "—"
+  defp iff(v), do: :erlang.float_to_binary(v / 100, decimals: 2)
+
+  defp ef(nil), do: "—"
+  defp ef(v), do: :erlang.float_to_binary(v / 1, decimals: 2)
+
   defp pct(nil), do: "—"
-  defp pct(v), do: "#{v}%"
+  defp pct(v), do: "#{:erlang.float_to_binary(v / 1, decimals: 1)}%"
 
   defp watts(nil), do: "—"
   defp watts(v), do: "#{round(v)}W"

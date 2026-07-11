@@ -67,7 +67,7 @@ defmodule FitnessFetch.Intervals do
       ftp: a["icu_ftp"],
       np: a["icu_weighted_avg_watts"],
       ef: a["icu_efficiency_factor"],
-      decoupling: a["icu_decoupling"],
+      decoupling: a["decoupling"],
       avg_hr: a["average_heartrate"],
       max_hr: a["max_heartrate"]
     }

@@ -15,7 +15,7 @@ defmodule FitnessFetch.IntervalsTest do
           "icu_ftp" => 230,
           "icu_weighted_avg_watts" => 161.0,
           "icu_efficiency_factor" => 1.30,
-          "icu_decoupling" => 4.2,
+          "decoupling" => 4.2,
           "average_heartrate" => 124.0,
           "max_heartrate" => 160.0
         })
