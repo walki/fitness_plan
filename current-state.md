@@ -23,7 +23,7 @@
 | Goal | Baseline | Target | Timeline |
 |------|----------|--------|----------|
 | Weight | 194 lbs (Jan 2026 start) / **~188 (post-FBG)** | **165 lbs** | **No hard deadline. Target rate 0.5–0.75 lb/week.** At that pace, end-of-2026 likely lands ~172–178; full goal extends into 2027. The pace is success; the number is the destination. |
-| Cycling FTP | 220W → **230W (May 17)** | 240–250W (250W stretch) | Dec 2026 |
+| Cycling FTP | 220 → 230 (May est., likely optimistic) → **~210 (Jul 10 recal, intervals eFTP 203)** | 240–250W (250W stretch) | Dec 2026 |
 | Run pace (HR <135) | 13:15 (Apr 1) → **11:54/mi (May 9)** | Sub-10:00/mi | Dec 2026 |
 | Run tempo pace (HR 145-155) | 10:00/mi @ HR 147 (May 22) → **9:19/mi @ HR 148 (May 28)** | continued progression | Late 2026 |
 | **Half marathon** | — | **Sub-2:00** | **Late 2026** (hardest goal — needs weight loss to be in reach) |
@@ -77,8 +77,8 @@
 
 | Metric | Value | Date | Notes |
 |--------|-------|------|-------|
-| FTP | **230W (working estimate)** | May 17, 2026 | Bumped from 220W after Red Eagle: NP 199W @ HR 142 for 2:40 (IF 0.91 off 219W) with reported "felt good." Race data > formal test. Confirmed by Wed 5/20 over-under (max HR 164 at over targets) and Mon 5/25 long Z2 (IF 0.726, only 15 bpm cardiac drift over 4+ hrs). |
-| Cycling Z2 power / HR | 129–172W / HR 120–134 | May 24, 2026 | Working zones off 230W FTP and ~150 LTHR estimate. Validated by Mon 5/25 ride. |
+| FTP | **~210W (working, recalibrated Jul 10)** | Jul 10, 2026 | The May "230" was a single-race inference and looks optimistic. intervals.icu eFTP (from the full power-duration curve) = **203**; set intervals + our working number to **210** as realistic. **Formal test deferred to post-BR100** (a hard 20-min/ramp re-anchors eFTP). Prior power metrics computed off 230 (or intervals' stale 192) are skewed high/low respectively — trust trends, not absolutes. Roger rides by HR first, so training is unaffected. |
+| Cycling Z2 power / HR | ~118–158W / HR 120–134 | Jul 10, 2026 | Power range recalc'd off ~210 FTP (was 129–172 off 230). **HR is the primary guide regardless** — power is secondary. |
 | Cycling LTHR | ~150 bpm | inferred May 17 | From Red Eagle: HR avg 142 for 2:40 at IF 0.91. Real test needed for confirmation. |
 | **Longest run (BR100 build)** | **11.13 mi, 1,038 ft, HR 132 avg / 153 max, 80-90°F** | **Jun 28, 2026** | **CVNP. Run 1:26 / walk 1:09 (hiked climbs to hold HR). Proves Leg 8 distance (12.3 mi) 4 wks early. Superb aerobic control.** |
 | Aerobic run pace (HR <135) | **11:54/mi** | May 9, 2026 | Up from 13:15 (Apr 1). |
@@ -178,4 +178,4 @@
 
 ---
 
-*Last updated: July 6, 2026 — BR100 build week 3 complete (~170 mi/4-day heat ride block), week 4 planned (dress-rehearsal long run Sun Jul 12)*
+*Last updated: July 10, 2026 — BR100 build week 4; FTP recalibrated 230 → ~210 (intervals.icu eFTP), formal test deferred post-race; fitness/form fresh (TSB +24) for Jul 25*
