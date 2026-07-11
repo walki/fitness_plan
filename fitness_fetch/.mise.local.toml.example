@@ -16,3 +16,7 @@ GARMIN_PASSWORD = "your-garmin-password"
 # Escape hatch if SSO login fails (Cloudflare/MFA): an OAuth2 bearer token
 # obtained elsewhere (e.g. Python garth). Overrides the email/password flow.
 # GARMIN_BEARER = "..."
+
+# intervals.icu (computed metrics: TSS, IF, decoupling, EF, CTL/ATL/form)
+INTERVALS_ATHLETE_ID = "i123456"
+INTERVALS_API_KEY = "from-intervals.icu-settings-developer"

@@ -125,6 +125,20 @@ refreshed automatically.
 > works regardless of the login flow. The data + formatting layers are unit
 > tested; the live handshake needs real credentials to validate.
 
+## intervals.icu (computed metrics + fitness/form)
+
+intervals.icu ingests Strava/Coros/Garmin and does the analytics we deliberately
+keep *out* of this app — so we just **pull its computed numbers**.
+
+1. Put `INTERVALS_ATHLETE_ID` + `INTERVALS_API_KEY` (intervals.icu → Settings →
+   Developer) in `.mise.local.toml`.
+2. `mise exec -- mix intervals.week --week 2026-07-12`
+
+Prints a per-activity metrics table (TSS, IF, decoupling, efficiency factor,
+NP) and the daily **fitness/fatigue/form** trend (CTL/ATL/TSB) — the piece that
+shows, objectively, whether you're fresh or fatigued heading into a race. Auth
+is HTTP Basic (username `API_KEY`, password = your key).
+
 ## Layout
 
 ```
@@ -139,6 +153,9 @@ lib/mix/tasks/strava.auth.ex       one-time Strava OAuth helper
 lib/mix/tasks/strava.fetch.ex      fetch + print activities for a date range
 lib/mix/tasks/energy.ex            daily calorie-burn table
 lib/mix/tasks/garmin.wellness.ex   fetch + print a week of Garmin wellness
+lib/fitness_fetch/intervals.ex     intervals.icu client (computed metrics + wellness)
+lib/fitness_fetch/intervals/format.ex  metrics + fitness/form tables
+lib/mix/tasks/intervals.week.ex    fetch + print intervals.icu metrics for a week
 ```
 
 ## Roadmap
