@@ -32,7 +32,19 @@ defmodule FitnessFetch.Intervals.Format do
     | Date | Activity | Type | TSS | IF | NP | EF | Decoupling | HR |
     |------|----------|------|-----|----|----|----|-----------|-----|
     #{Enum.join(rows, "\n")}
+    #{ftp_note(activities)}
     """
+  end
+
+  # Surface the FTP intervals.icu assumed — TSS/IF/spike-fixing all key off it,
+  # so if it looks wrong, the metrics above are suspect.
+  defp ftp_note(activities) do
+    ftps = activities |> Enum.map(& &1.ftp) |> Enum.reject(&is_nil/1) |> Enum.uniq() |> Enum.sort()
+
+    case ftps do
+      [] -> ""
+      list -> "\nFTP intervals.icu assumed: #{Enum.map_join(list, ", ", &"#{&1}W")} — sanity-check this."
+    end
   end
 
   def form_section([]), do: "### Fitness / Form\n(no wellness data)"

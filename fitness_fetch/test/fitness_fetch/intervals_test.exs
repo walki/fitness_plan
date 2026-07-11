@@ -12,6 +12,7 @@ defmodule FitnessFetch.IntervalsTest do
           "type" => "Ride",
           "icu_training_load" => 136,
           "icu_intensity" => 70,
+          "icu_ftp" => 230,
           "icu_weighted_avg_watts" => 161.0,
           "icu_efficiency_factor" => 1.30,
           "icu_decoupling" => 4.2,
@@ -21,6 +22,7 @@ defmodule FitnessFetch.IntervalsTest do
 
       assert a.date == ~D[2026-07-09]
       assert a.tss == 136
+      assert a.ftp == 230
       assert a.np == 161.0
       assert a.decoupling == 4.2
       assert a.avg_hr == 124.0

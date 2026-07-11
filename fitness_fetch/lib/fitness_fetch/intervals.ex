@@ -64,6 +64,7 @@ defmodule FitnessFetch.Intervals do
       type: a["type"],
       tss: a["icu_training_load"],
       intensity: a["icu_intensity"],
+      ftp: a["icu_ftp"],
       np: a["icu_weighted_avg_watts"],
       ef: a["icu_efficiency_factor"],
       decoupling: a["icu_decoupling"],
