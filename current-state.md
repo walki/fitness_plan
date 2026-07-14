@@ -55,8 +55,8 @@
 
 ## 📅 Active Plan
 
-**Current phase:** BR100 build week 4 of 5 (week of Jul 6–12) — **last real work week before taper.** Running primary, cycling maintenance, weight loss active. **Long-run distance proven (11.13 mi w/ 1,038 ft Jun 28; Leg 8 is 12.3 mi).** Just banked a big heat/aerobic block — **~170 mi riding over 4 days (Jul 3–6) in 99°F+ heat, all easy** (great late-July heat adaptation). Week 4 job: unload ride fatigue, rebuild run rhythm, strength back on track, **Sun Jul 12 = dress-rehearsal long run** (~11-12 mi trail + race fueling/pacing). Then week 5 sharpen, Jul 20–25 taper into race.
-**Active plan file:** none — planning **week-by-week** in the weekly logs (per Roger's preference Jun 14, 2026). Current week: `weekly-logs/2026-07-12.md` + `weekly-plans/2026-07-12-br100-week-4.pdf`.
+**Current phase:** **BR100 TAPER — week of Jul 13–19 (taper wk 1), race Sat Jul 25.** Build is done: distance proven (11.13 mi Jun 28, 10.1 mi dress rehearsal Jul 12) and **fitness high (CTL 72)**. But a big Sunday double (Jul 12: 10 mi run + 43 mi ride, ~310 TSS) dropped **form to −11 (fatigued)** — so the taper's job is to **shed fatigue and bring form to +5 to +15 by race day.** This week: recover, re-center on running, cut volume, easy/optional rides, deloaded strength (hold heavy lower), last moderate run (~6-8 mi) Sat. Then Jul 20–25 = race week (very light).
+**Active plan file:** none — planning **week-by-week** in the weekly logs (per Roger's preference Jun 14, 2026). Current week: `weekly-logs/2026-07-19.md` + `weekly-plans/2026-07-19-br100-taper-week-1.pdf`.
 **Weekly shape:** 3–4 runs + 1–2 rides (some combined days) + 3 strength touches + daily rehab. Long trail run Sun. Bikes stay unstructured (summer) — Z2 maintenance, no intervals unless wanted. *Week 3 exception (revised Jul 2): holiday ride trip became a **3-day ride block** (Fri Columbus loop, Sat→Yellow Springs, Sun→Columbus, maybe Mon too), extreme heat = steady/slow. **No long run this week — it shifts to week 4 (Jul 6–12).** Mon–Thu got 2 runs (incl 6.11 mi trail w/ 786 ft) + club ride + push/core strength; Full Body Lower didn't land.*
 
 ### Upcoming Events
@@ -178,4 +178,4 @@
 
 ---
 
-*Last updated: July 10, 2026 — BR100 build week 4; FTP recalibrated 230 → ~210 (intervals.icu eFTP), formal test deferred post-race; fitness/form fresh (TSB +24) for Jul 25*
+*Last updated: July 13, 2026 — BR100 taper week 1 planned. Dress rehearsal ✅ (10.1 mi). Sunday double crashed form to −11; taper to rebuild freshness for Leg 8 Sat Jul 25. FTP ~210.*
