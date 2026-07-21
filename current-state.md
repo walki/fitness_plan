@@ -12,7 +12,7 @@
 - **Location:** Ohio
 - **Age:** 56
 - **Starting weight:** 194 lbs
-- **Current weight:** 189.3 lbs avg *(as of May 24, 2026, 7-day avg, −0.86 vs prior week)*
+- **Current weight:** **~187.5 lbs** avg *(7-day, Jul 19, 2026; down from 187.9)* — **plateau cracking** after 5 flat weeks; Jul 19 printed a 184.0 low (whoosh). First consistent-deficit week w/ no giant refill day moved the scale.
 - **Weight goal:** **165 lbs** (~0.5–0.75 lb/week, trending downward is the key)
 - **Health:** On blood pressure meds. Doc says "okay" but weight loss is part of the plan.
 
@@ -55,8 +55,13 @@
 
 ## 📅 Active Plan
 
-**Current phase:** **BR100 TAPER — week of Jul 13–19 (taper wk 1), race Sat Jul 25.** Build is done: distance proven (11.13 mi Jun 28, 10.1 mi dress rehearsal Jul 12) and **fitness high (CTL 72)**. But a big Sunday double (Jul 12: 10 mi run + 43 mi ride, ~310 TSS) dropped **form to −11 (fatigued)** — so the taper's job is to **shed fatigue and bring form to +5 to +15 by race day.** This week: recover, re-center on running, cut volume, easy/optional rides, deloaded strength (hold heavy lower), last moderate run (~6-8 mi) Sat. Then Jul 20–25 = race week (very light).
-**Active plan file:** none — planning **week-by-week** in the weekly logs (per Roger's preference Jun 14, 2026). Current week: `weekly-logs/2026-07-19.md` + `weekly-plans/2026-07-19-br100-taper-week-1.pdf`.
+**Current phase:** **BR100 RACE WEEK — Jul 20–25, Leg 8 ~2 AM Sat Jul 25.** Taper worked: form −11 (Jul 12) → **+21 (Jul 20)** — arriving *very* fresh. Race-week job = **stay sharp, don't go flat** (light turnover, no building). Adaptive night-run plan (timing keyed to team splits; Steve/leg-7 = predictor). Forecast: night ~64°F (cool = advantage), 81% humidity, damp trail possible, **AQI 86 Moderate + smoke alert — watch daily.**
+
+**🔭 STRATEGIC RESET (Jul 15, 2026 — see [[big-picture.md]], rewritten):** BR100 relay is **fun-time, not a goal.** The 3 real goals + honest mid-year plan: (1) **Weight** = lagging keystone, priority lever resumes post-relay; (2) **Half marathon** sub-2:00 = fall A-goal (Aug–Nov), most reachable, cooperates w/ weight loss; (3) **FTP** consciously → winter/Q1 2027 (summer build never happened). Bike rides continue (not forced) as aerobic maintenance; strength stays but flexes under crunch. **NEW: threshold testing protocol** — stop inferring zones, test them (bike ramp + 20-min compare, run 5K TT→VDOT, re-test 6–8 wks). See [[test_thresholds_dont_infer]].
+
+**Active plan file:** none — planning **week-by-week** in the weekly logs. Current week: `weekly-logs/2026-07-19.md` (last wk, closed) + `weekly-plans/2026-07-20-br100-race-week.pdf`.
+
+**⏭️ POST-RELAY:** Jul 26–Aug 2 = recover + Long Island camping road trip (unstructured, trail runs + easy rides by feel — a de facto transition week). **Week of Aug 3 = testing week** (run 5K TT first, bike ramp ~3–4 days later, 20-min bike ~2 wks after). Structured fall half-marathon block starts calibrated ~week of Aug 10. Roger to pick a road half (Oct–Dec) + maybe a trail race.
 **Weekly shape:** 3–4 runs + 1–2 rides (some combined days) + 3 strength touches + daily rehab. Long trail run Sun. Bikes stay unstructured (summer) — Z2 maintenance, no intervals unless wanted. *Week 3 exception (revised Jul 2): holiday ride trip became a **3-day ride block** (Fri Columbus loop, Sat→Yellow Springs, Sun→Columbus, maybe Mon too), extreme heat = steady/slow. **No long run this week — it shifts to week 4 (Jul 6–12).** Mon–Thu got 2 runs (incl 6.11 mi trail w/ 786 ft) + club ride + push/core strength; Full Body Lower didn't land.*
 
 ### Upcoming Events
@@ -178,4 +183,4 @@
 
 ---
 
-*Last updated: July 13, 2026 — BR100 taper week 1 planned. Dress rehearsal ✅ (10.1 mi). Sunday double crashed form to −11; taper to rebuild freshness for Leg 8 Sat Jul 25. FTP ~210.*
+*Last updated: July 20, 2026 (Mon night) — Taper week closed (grade A: form −11→+21, plateau cracked to ~187.5, ~300/day deficit). Race week live; race-week PDF built. **Mid-year strategic reset done** (big-picture.md rewritten): fall = weight + half marathon, FTP → winter, threshold testing protocol added (testing week of Aug 3, after Long Island camping Jul 30–Aug 2). FTP ~210 (untested — real test Aug).*
