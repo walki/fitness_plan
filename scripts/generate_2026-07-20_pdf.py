@@ -142,7 +142,7 @@ def build_pdf(output_path):
                 "<b>Track the team's actual splits.</b> Steve (leg 7, ~11 PM, 14.4 mi) is your direct predictor -- "
                 "once he's a few mi in, you know your window +/-30 min. Heat/smoke slowing earlier legs pushes "
                 "you LATER = cooler + possibly cleaner air.<br/><br/>"
-                "<b>SLEEP:</b> Fri night = bank real sleep. Sat = sleep in + rest. Late start (3-5 AM): get a "
+                "<b>SLEEP (home -- own bed):</b> Fri night = bank real sleep. Sat = sleep in + rest. Late start (3-5 AM): get a "
                 "genuine sleep BLOCK first (down ~9-10 PM, wake off team progress). Early (~midnight): afternoon nap instead.",
                 small_style,
             ),
@@ -151,7 +151,9 @@ def build_pdf(output_path):
                 "1-1.5 hr before (NOT a big 1 AM meal). On course: <b>4.5 scoops Tailwind / 1.5L + SiS gels</b> "
                 "(touch more fluid -- 81% humidity).<br/>"
                 "<b>CAFFEINE:</b> SiS caffeine gel 30-45 min pre-start for the 2-4 AM low. Don't overdo.<br/>"
-                "<b>WARM-UP:</b> at exchange 30-45 min early; dynamic warm-up + a few strides (cold/stiff at 2 AM).<br/>"
+                "<b>DRIVE/ARRIVE:</b> race ~45 min from home. Work backward from est. start: ~45 min drive + arrive "
+                "30-45 min early + warm-up = leave ~1.5 hr before your window (e.g. 2 AM start -> out the door ~12:30 AM).<br/>"
+                "<b>WARM-UP:</b> dynamic warm-up + a few strides at the exchange (cold/stiff at 2 AM).<br/>"
                 "<b>PACING/HR:</b> dark + damp + 59% unpaved -> <b>conservative opening third</b> til eyes/footing adapt. "
                 "Then <b>&lt;145 / &lt;148 (climb mi 7-8, let it spike, settle on descent) / last third let it rip</b> (cool air = real upside).",
                 small_style,
