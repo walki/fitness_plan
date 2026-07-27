@@ -6,4 +6,5 @@
 - [BP framing](bp_framing.md) — On meds, doc-managed. Track readings, don't alarm. Weight loss to 165 is the lever; decision gate is "still 132 at 165 lbs"
 - [Life context over metrics](life_context_over_metrics.md) — Don't moralize single-day food/drink choices. Funerals, family meals, social events = NOT coachable moments. Trends matter, single days don't.
 - [Auto-regulation](auto_regulation.md) — Roger picks weights by feel + form. Prescribe movement + reps + intent; let him set load. Drop weight when form breaks. Same principle extends to HR ceilings, pacing decisions.
-- [Logging tools](logging_tools.md) — MFP printable diary URL preferred for food; Hevy app for strength; Garmin Connect for cardio; Coros Dura replacing Garmin head unit for cycling.
+- [Logging tools](logging_tools.md) — Data now auto-pulled via `fitness_fetch` (Strava/Garmin/intervals/energy); MFP food + weigh-ins still hand-pasted.
+- [Caffeine + night runs](caffeine_night_run_gi.md) — Pre-leg caffeine before a middle-of-the-night effort is a GI liability for Roger (2 bathroom stops at BR100 2 AM leg); don't recommend it for overnight efforts.

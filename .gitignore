@@ -2,3 +2,5 @@
 .mise.local.toml
 
 erl_crash.dump
+
+.claude/worktrees/

@@ -1,11 +1,13 @@
 ---
 name: roger-s-data-logging-tools-and-formats
-description: "Roger uses MFP for food (printable diary URL is the preferred format), Hevy app for strength, Garmin for cardio, BPM monitor for BP. Coros Dura on order replacing Garmin head unit."
+description: "Data now auto-pulled via fitness_fetch (Strava/Garmin/intervals/energy); MFP food + weigh-ins still hand-pasted. Hevy for strength detail, Coros Dura for cycling, Garmin watch for running/wellness."
 metadata: 
   node_type: memory
   type: reference
   originSessionId: c08792a8-673b-4a3d-ac4c-5b4079505d25
 ---
+
+**⚡ AS OF JUL 2026: most data is auto-pulled, not pasted.** The `fitness_fetch/` Elixir app (see `fitness_fetch/README.md` + CLAUDE.md "Data sources") runs mix tasks at check-in: `strava.fetch` (activities), `garmin.wellness` (sleep/RHR/BP), `intervals.week` (TSS/IF/CTL/ATL/TSB form), `energy` (calorie burn, fed the MFP weigh-ins). **Only MyFitnessPal (food + daily weigh-ins) is still hand-pasted** — no API. The paste-format notes below still apply to MFP; the Garmin/strength paste notes are now the fallback for when a fetch fails.
 
 **Food tracking — MyFitnessPal**
 - Roger's MFP username: `rogerwalker`

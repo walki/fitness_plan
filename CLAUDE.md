@@ -51,14 +51,27 @@ This gets you up to speed fast so Roger can jump straight into updates without r
 
 ## Data sources and workflow
 
-Roger pastes data directly in the conversation — no CSV exports needed:
+**Most training data is now auto-pulled via the `fitness_fetch/` Elixir app** — Claude runs the mix tasks directly instead of Roger pasting. **Only MyFitnessPal (food + weigh-ins) is still hand-pasted** (no API yet). See `fitness_fetch/README.md` for full details.
 
-- **Garmin Connect** — ride/run data (copy-paste from activity detail), daily calorie burn, sleep score, HRV, resting HR
-- **Garmin Index BPM** — blood pressure readings (2×/week target)
-- **MyFitnessPal** — daily food diary (copy-paste), daily weigh-ins
-- **Historical CSV exports** in `exports/` — VeloViewer activities + MFP data from early in the project. Kept for reference but no longer the active workflow.
+**At weekly check-in, run these from the `fitness_fetch/` directory** (creds live in `fitness_fetch/.mise.local.toml`):
 
-When Roger shares data, log it in the current weekly log and cross-reference against the active plan.
+```sh
+mise exec -- mix strava.fetch --week YYYY-MM-DD        # activities (runs/rides/strength) → ready-to-paste log rows
+mise exec -- mix garmin.wellness --week YYYY-MM-DD     # sleep / resting HR / blood pressure tables
+mise exec -- mix intervals.week --week YYYY-MM-DD      # TSS/IF/NP/decoupling + CTL/ATL/TSB (fitness/form)
+mise exec -- mix energy --week YYYY-MM-DD --weights DATE=lbs,...   # daily calorie burn (needs weigh-ins from MFP)
+```
+
+`--week` takes any date in the target Mon–Sun week (use the Sunday). All output is pre-formatted for the weekly-log tables.
+
+- **Strava** — unified activity source (Garmin watch runs + Coros Dura rides both sync here). Gear name, power (NP/avg or est), and Hevy strength detail come through.
+- **Garmin wellness** — sleep, resting HR, BP. Reverse-engineered login (no official API); can break on Cloudflare/MFA — escape hatch is `GARMIN_BEARER` (see README). See `memory-backup/garmin_data_caveats.md` for interpretation notes (device temp reads hot, etc.).
+- **intervals.icu** — computed metrics + fitness/form trend (the objective fresh-vs-fatigued read).
+- **`energy`** — self-computed burn (resting-from-weight + active-above-resting), dodges Garmin's HR-dropout burn problem. Feed it the MFP weigh-ins.
+- **MyFitnessPal** — **still copy-paste** (food diary + daily weigh-ins). This is the only manual source.
+- **Historical CSV exports** in `exports/` — early-project VeloViewer + MFP data. Reference only.
+
+**Workflow:** pull the four sources, combine with Roger's MFP paste + his subjective report (RPE, how it felt), then log it all in the current weekly log and cross-reference against the active plan.
 
 ## Zwift custom workouts
 
