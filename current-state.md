@@ -12,7 +12,7 @@
 - **Location:** Ohio
 - **Age:** 56
 - **Starting weight:** 194 lbs
-- **Current weight:** **~185.6 lbs** avg *(7-day, Jul 26, 2026; down from ~187.5)* — **plateau crack CONFIRMED.** Jul 19's 184.0 whoosh settled at ~185 and did NOT bounce back to 187+; trend stepped down ~2 lbs in two weeks — *through a race week.* Proof-of-concept for the fall weight block: real deficit + no giant refill day = the scale moves.
+- **Current weight:** **~185.6 lbs** avg *(real trend; Jul 26)* — **plateau crack CONFIRMED.** Jul 19's 184.0 whoosh settled at ~185 and did NOT bounce back; stepped down ~2 lbs in two weeks *through a race week.* Proof-of-concept for the fall weight block: real deficit + no giant refill day = the scale moves. *(Aug 3 showed 189.4 = salty-camp-food/travel bloat + no weigh-ins for a week — NOT real; expect settle to 185–186 within days.)*
 - **Weight goal:** **165 lbs** (~0.5–0.75 lb/week, trending downward is the key)
 - **Health:** On blood pressure meds. Doc says "okay" but weight loss is part of the plan.
 
@@ -55,7 +55,7 @@
 
 ## 📅 Active Plan
 
-**Current phase:** **✅ BR100 DONE (Leg 8 raced ~2 AM Sun Jul 26).** 12.23 mi / 1,512 ft trail, 12:46/mi, HR 133/152, 2:36:14 — controlled, well-paced, ran the last 2-3 mi, gave the team its anchor. Limiter was circadian low + ~1.5 hr van sleep, not fitness (never redlined). Caffeine backfired (2 GI stops, ~6 min — lesson banked). **Now: Long Island camping road trip (Jul 26–Aug 2) = de facto transition/recovery week, unstructured by feel.** Then testing week (week of Aug 3) → fall half-marathon block ~Aug 10. See `weekly-logs/2026-07-26.md` (race-week closed).
+**Current phase:** **🍂 FALL BLOCK KICKOFF — week of Aug 3 (testing week).** BR100 done ✅ (Leg 8, Jul 26). Camping transition week done ✅ (Jul 27–Aug 2, unstructured recovery — 5 hikes + 4 rides incl Lehigh Gorge 36mi; fresh at form +20, RHR 47). **This week:** re-entry running + **threshold testing (bike ramp Wed, run 5K TT Sat)** + **weight deficit RESUMES** as the priority lever. Then the calibrated fall half-marathon block builds ~Aug 10+. Run-detrained (8 days off running), cycling-primed; toe (BR100 stub) cosmetic/no pain. **Roger to lock a fall half race (mid-Oct–mid-Nov target).** See `weekly-logs/2026-08-03.md`.
 
 **🔭 STRATEGIC RESET (Jul 15, 2026 — see [[big-picture.md]], rewritten):** BR100 relay is **fun-time, not a goal.** The 3 real goals + honest mid-year plan: (1) **Weight** = lagging keystone, priority lever resumes post-relay; (2) **Half marathon** sub-2:00 = fall A-goal (Aug–Nov), most reachable, cooperates w/ weight loss; (3) **FTP** consciously → winter/Q1 2027 (summer build never happened). Bike rides continue (not forced) as aerobic maintenance; strength stays but flexes under crunch. **NEW: threshold testing protocol** — stop inferring zones, test them (bike ramp + 20-min compare, run 5K TT→VDOT, re-test 6–8 wks). See [[test_thresholds_dont_infer]].
 
