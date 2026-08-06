@@ -82,7 +82,7 @@
 
 | Metric | Value | Date | Notes |
 |--------|-------|------|-------|
-| FTP | **~210W (working, recalibrated Jul 10)** | Jul 10, 2026 | The May "230" was a single-race inference and looks optimistic. intervals.icu eFTP (from the full power-duration curve) = **203**; set intervals + our working number to **210** as realistic. **Formal test deferred to post-BR100** (a hard 20-min/ramp re-anchors eFTP). Prior power metrics computed off 230 (or intervals' stale 192) are skewed high/low respectively — trust trends, not absolutes. Roger rides by HR first, so training is unaffected. |
+| FTP | **~215W working (TESTED Aug 5)** | Aug 5, 2026 | **Ramp test done:** Zwift FTP **229W** (75% of best 1-min) / intervals.icu eFTP **214W** (power-duration model). 15W spread = **punchy/anaerobic rider** (strong top-end inflates ramp). **Ramp-to-ramp: old 217 → 229 = +12W (~5.5%)** — measurably fitter than Feb. **Working FTP set to ~215W** (conservative, matches intervals) for zone-setting. **20-min test ~wk of Aug 17 = tiebreaker.** Re-test 6–8 wks. Roger rides by HR first regardless. |
 | Cycling Z2 power / HR | ~118–158W / HR 120–134 | Jul 10, 2026 | Power range recalc'd off ~210 FTP (was 129–172 off 230). **HR is the primary guide regardless** — power is secondary. |
 | Cycling LTHR | ~150 bpm | inferred May 17 | From Red Eagle: HR avg 142 for 2:40 at IF 0.91. Real test needed for confirmation. |
 | **Longest run (BR100 build)** | **11.13 mi, 1,038 ft, HR 132 avg / 153 max, 80-90°F** | **Jun 28, 2026** | **CVNP. Run 1:26 / walk 1:09 (hiked climbs to hold HR). Proves Leg 8 distance (12.3 mi) 4 wks early. Superb aerobic control.** |
