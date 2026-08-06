@@ -39,6 +39,7 @@ This gets you up to speed fast so Roger can jump straight into updates without r
 - `big-picture.md` — Long-term goals and strategy
 - `nutrition.md` — Nutrition plan
 - `current-state.md` — Where things stand now (source of truth)
+- `coaching-context/` — Auxiliary reference: durable coaching principles, athlete caveats, and tool/data notes (how to coach Roger). See its README.
 - `weekly-base-template.md` — Template for weekly plans
 - `reporting-templates.md` — Templates for tracking/reporting
 - `weekly-logs/` — Weekly log entries
