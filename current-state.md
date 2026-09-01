@@ -55,17 +55,19 @@
 
 ## 📅 Active Plan
 
-**Current phase:** **🚴 BUILD 1 — OTET prep (Aug 31 → Sep 20).** August was taken off structure (see `weekly-logs/2026-08-31.md` for the full recap: CTL 60.7 → 45.3, 5 runs in 28 days, ~116 mi riding). **New structure per Roger (Aug 31): build 3 / recover 1 / build 3, no race on the calendar, no 5K TT.** Speed work is **effort-based** — one speed touch per week, prescribed as shape + intent, and the repeated sessions *are* the test data [[auto_regulation]] [[test_thresholds_dont_infer]].
+**Current phase:** **BUILD 1, Wk 1 (Aug 31 → Sep 20).** August was taken off structure (see `weekly-logs/2026-08-31.md` for the recap: CTL 60.7 → 45.3, 5 runs in 28 days, ~116 mi riding). **Structure per Roger (Aug 31): build 3 / recover 1 / build 3, no race on the calendar, no 5K TT.** Speed work is **effort-based** — one speed touch per week, prescribed as shape + intent, and the repeated sessions *are* the test data [[auto_regulation]] [[test_thresholds_dont_infer]]. Wk 7 repeats the Wk 2 fartlek as the progression read.
 
-**🎯 THE A-EVENT: OTET — Sep 18–21, 2026.** Cleveland → Cincinnati, **~330 mi in 4 days**, bikepacking with Ride for Hope, on the Salsa Cutthroat (HR + RPE, no power). ~82 mi/day flat rail trail, ~6+ hrs moving/day, 4 consecutive days — **bigger than Florida** (282 mi / 6 days). The next three weeks point at this ride, not at running. Prep = contact points, load handling, consecutive-day tolerance (2.5 weeks can't add fitness that changes an 82-mi flat day). **Dress rehearsal: back-to-back loaded rides Sep 12–13.** **Deficit suspended Sep 18–21** (eat to ride), resumes Sep 22.
+**Block map:** Build 1 (Aug 31 → Sep 20) → Recovery (Sep 21–27) → Build 2 (Sep 28 → Oct 18, long run 7→9, speed touches escalate, **20-min FTP test** as the owed ramp tiebreaker) → reassess ~Oct 19.
 
-**Block map:** Build 1 (Aug 31 → Sep 20, ends w/ OTET) → Recovery (Sep 21–27) → Build 2 (Sep 28 → Oct 18, **running takes the lead back** + the owed **20-min FTP test** as ramp tiebreaker) → reassess ~Oct 19.
+**Bike:** volume by feel — club rides, gravel, Zwift Z2 as they come. Not prescribed.
 
 **🔭 STRATEGIC RESET (Jul 15, 2026 — see [[big-picture.md]], rewritten):** BR100 relay was **fun-time, not a goal.** The 3 real goals: (1) **Weight** = lagging keystone, still the #1 lever; (2) **Half marathon** sub-2:00 — **moved to spring 2027** (Aug 31 call: no fall race locked, and the weight isn't there yet to support 9:09/mi); (3) **FTP** → winter/Q1 2027. **Threshold testing protocol** stands for the bike (ramp done, 20-min owed); for running it's satisfied by repeatable effort-based sessions instead of a TT.
 
 **Active plan file:** none — planning **week-by-week** in the weekly logs. Current week: `weekly-logs/2026-08-31.md`.
 
-**Weekly shape (Build 1):** 3 runs (easy + 1 speed touch) + 1–2 rides (Sat long/loaded) + 3 strength touches + daily rehab. Bike is the priority modality through Sep 21.
+**Weekly shape (Build 1):** 3–4 runs (easy + 1 speed touch) + rides by feel + 3 strength touches + daily rehab.
+
+**⚠️ Coaching note (Roger, Aug 31):** Roger is an experienced bikepacker — Huracan 300, OTET last year, many big trips. **Do not treat big rides as events needing prep, taper, or fueling coaching.** He'll adjust riding by feel and say so if he wants input. Log the data, don't manage the ride.
 
 ### Upcoming Events
 
@@ -76,7 +78,7 @@
 | ~~May 17, 2026~~ | ~~Red Eagle Gravel Grinder~~ | ~~42.6 mi~~ | ~~1,479 ft~~ | ~~B+ race~~ ✅ Done — **2:40, NP 199W, IF 0.91 off 219W FTP, sub-3:00 hit** |
 | ~~Jun 13, 2026~~ | ~~Funk Bottoms Gravel (FBG)~~ | ~~66.7 mi (100k)~~ | ~~6,186 ft~~ | ~~A race~~ ✅ Done — **6:23:25 moving, NP 174W, IF 0.756 off 230W FTP, HR 134 avg / 158 max, 7,241 ft Garmin elev. Aerobic 5.0 Overreaching. Fueling 83.7 g/hr textbook. Walked 2 steep pitches (>15%). Finished feeling good — heat + climbing limited push, not fitness. Garmin head unit failed sensors last 15 mi → Coros Dura ordered.** |
 | ~~Jul 26, 2026~~ | ~~Burning River 100 — Leg 8 (anchor leg)~~ | ~~12.3 mi (+1,144 ft)~~ | ~~night trail relay~~ | ✅ **Done — 12.23 mi, 1,512 ft (32% more climb than billed), 12:46/mi, HR 133 avg / 152 max, 2:36:14 moving. Raced ~2 AM. Power-hiked singletrack climbs, ran the last 2-3 mi, gave the team its anchor; estimates all landed. Controlled effort — limiter was circadian low + ~1.5 hr van sleep, not fitness (never redlined). Caffeine → 2 GI stops (~6 min); banked as a lesson for future night efforts. Toe stubbed mi 4 → blue/black nail. Great weekend.** |
-| **Sep 18–21, 2026** | **OTET — Cleveland → Cincinnati (Ride for Hope)** | **~330 mi / 4 days** | rail trail, flat | **🎯 A-EVENT.** 4-day bikepack, ~82 mi/day on the Cutthroat. HR + RPE only. Deficit suspended. |
+| Sep 18–21, 2026 | OTET — Cleveland → Cincinnati (Ride for Hope) | ~330 mi / 4 days | rail trail, flat | Calendar note, **not a goal event.** Repeat of last year; no prep or plan changes. Cutthroat, HR + RPE. |
 | ~~Late 2026~~ → **Spring 2027** | **Half marathon** | 13.1 mi | — | **Sub-2:00 goal — moved off fall 2026 (Aug 31).** No race locked; weight needs to come down to make 9:09/mi at HR sustainable. Keep run frequency + weekly speed touch alive in the meantime. |
 | Jun 2027 (est) | **FBG 2027** | 100k | 6,186 ft | Stretch goal: **sub-6:00 at 165 lbs** (-30 min vs 2026 + ~23 lbs lighter). |
 
