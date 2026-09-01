@@ -1,0 +1,16 @@
+# Roger works from Windows (core.autocrlf=true) and macOS. Without this, git
+# relies on a content heuristic to decide what is binary, and a PDF that
+# happens to look text-ish gets CRLF-mangled on checkout. Be explicit.
+
+* text=auto
+
+*.pdf   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.fit   binary
+*.tcx   binary
+
+# Zwift workout files are XML -- text, but keep them LF everywhere so the
+# Zwift machine and both dev machines see identical bytes.
+*.zwo   text eol=lf
