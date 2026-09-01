@@ -12,7 +12,7 @@
 - **Location:** Ohio
 - **Age:** 56
 - **Starting weight:** 194 lbs
-- **Current weight:** **186.2 lbs (Aug 6)** — last recorded number. **August was an offseason from structure, which included MFP** (Roger, Aug 31: "Everyone needs an offseason, and I was feeling like I needed it"). No intake or weigh-in data Aug 7–30, and none is coming — **don't ask for it.** The trend re-anchors off whatever the next weigh-ins are. *Note: Garmin's weight endpoint has data but Roger stopped syncing it Jun 14 — there is no automated weight source; weight only exists where he types it.* *Historical: the Jul 19 whoosh to 184.0 settled at ~185 and did NOT bounce back — plateau crack confirmed, ~2 lbs in two weeks through a race week.*
+- **Current weight:** **186.2 lbs (Aug 6)** — last recorded number. **August was an offseason from structure, which included MFP** (Roger, Aug 31: "Everyone needs an offseason, and I was feeling like I needed it"). No intake or weigh-in data Aug 7–30 — **August isn't getting reconstructed, don't ask for it.** Current weight arrives at the **mid-week check-in**; the trend re-anchors from there. *Note (confirmed Aug 31): **MFP is the only weight source.** Garmin's weight endpoint works but last synced Jun 14 — don't re-investigate automating this.* *Historical: the Jul 19 whoosh to 184.0 settled at ~185 and did NOT bounce back — plateau crack confirmed, ~2 lbs in two weeks through a race week.*
 - **Weight goal:** **165 lbs** (~0.5–0.75 lb/week, trending downward is the key)
 - **Health:** On blood pressure meds. Doc says "okay" but weight loss is part of the plan.
 
